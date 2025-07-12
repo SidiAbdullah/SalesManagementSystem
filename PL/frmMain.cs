@@ -68,5 +68,10 @@ namespace SalesManagementSystem_wf.PL
             product.ShowDialog();
         }
 
+        private void manageProductsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMenageProducts frmMenage = new frmMenageProducts();
+            frmMenage.ShowDialog();
+        }
     }
 }

@@ -15,6 +15,8 @@ namespace SalesManagementSystem_wf.PL
         public frmMenageProducts()
         {
             InitializeComponent();
+            BL.clsAddProduct displayProducts = new BL.clsAddProduct();
+            this.dgvProducts.DataSource =  displayProducts.getAllProducts();
         }
     }
 }

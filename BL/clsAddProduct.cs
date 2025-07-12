@@ -27,5 +27,11 @@ namespace SalesManagementSystem_wf.BL
             DAL.DataAccessLayer dal = new DAL.DataAccessLayer();
             dal.excuteCommand("addProduct", parameters);
         }
+        public DataTable getAllProducts()
+        {
+            DataTable dt = new DataTable();
+            dt = DAL.selectData("getAllProducts", null);
+            return dt;
+        }
     }
 }

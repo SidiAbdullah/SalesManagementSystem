@@ -24,3 +24,17 @@ C:\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.pdb
 C:\SalesManagementSystem\bin\Debug\SalesManagementSystem_wf.exe.config
 C:\SalesManagementSystem\bin\Debug\SalesManagementSystem_wf.exe
 C:\SalesManagementSystem\bin\Debug\SalesManagementSystem_wf.pdb
+D:\SalesManagementSystem\bin\Debug\SalesManagementSystem_wf.exe.config
+D:\SalesManagementSystem\bin\Debug\SalesManagementSystem_wf.exe
+D:\SalesManagementSystem\bin\Debug\SalesManagementSystem_wf.pdb
+D:\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.csproj.AssemblyReference.cache
+D:\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.exe.config
+D:\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.PL.frmAddProduct.resources
+D:\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.PL.frmLogin.resources
+D:\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.PL.frmMain.resources
+D:\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.PL.frmMenageProducts.resources
+D:\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.Properties.Resources.resources
+D:\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.csproj.GenerateResource.cache
+D:\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.csproj.CoreCompileInputs.cache
+D:\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.exe
+D:\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.pdb

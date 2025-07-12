@@ -80,7 +80,7 @@
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(236, 34);
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
@@ -88,21 +88,21 @@
             // 
             this.ftsm_createBackup.Enabled = false;
             this.ftsm_createBackup.Name = "ftsm_createBackup";
-            this.ftsm_createBackup.Size = new System.Drawing.Size(270, 34);
+            this.ftsm_createBackup.Size = new System.Drawing.Size(236, 34);
             this.ftsm_createBackup.Text = "Create backup";
             // 
             // ftsm_restoreBackup
             // 
             this.ftsm_restoreBackup.Enabled = false;
             this.ftsm_restoreBackup.Name = "ftsm_restoreBackup";
-            this.ftsm_restoreBackup.Size = new System.Drawing.Size(270, 34);
+            this.ftsm_restoreBackup.Size = new System.Drawing.Size(236, 34);
             this.ftsm_restoreBackup.Text = "Restore backup";
             // 
             // logputToolStripMenuItem
             // 
             this.logputToolStripMenuItem.Enabled = false;
             this.logputToolStripMenuItem.Name = "logputToolStripMenuItem";
-            this.logputToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.logputToolStripMenuItem.Size = new System.Drawing.Size(236, 34);
             this.logputToolStripMenuItem.Text = "Logout";
             this.logputToolStripMenuItem.Click += new System.EventHandler(this.logputToolStripMenuItem_Click);
             // 
@@ -121,26 +121,27 @@
             // newProductToolStripMenuItem
             // 
             this.newProductToolStripMenuItem.Name = "newProductToolStripMenuItem";
-            this.newProductToolStripMenuItem.Size = new System.Drawing.Size(267, 34);
+            this.newProductToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.newProductToolStripMenuItem.Text = "Add new product";
             this.newProductToolStripMenuItem.Click += new System.EventHandler(this.newProductToolStripMenuItem_Click);
             // 
             // manageProductsToolStripMenuItem
             // 
             this.manageProductsToolStripMenuItem.Name = "manageProductsToolStripMenuItem";
-            this.manageProductsToolStripMenuItem.Size = new System.Drawing.Size(267, 34);
+            this.manageProductsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.manageProductsToolStripMenuItem.Text = "Manage products";
+            this.manageProductsToolStripMenuItem.Click += new System.EventHandler(this.manageProductsToolStripMenuItem_Click);
             // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(267, 34);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.newToolStripMenuItem.Text = "Add new category";
             // 
             // manageCategoriesToolStripMenuItem
             // 
             this.manageCategoriesToolStripMenuItem.Name = "manageCategoriesToolStripMenuItem";
-            this.manageCategoriesToolStripMenuItem.Size = new System.Drawing.Size(267, 34);
+            this.manageCategoriesToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.manageCategoriesToolStripMenuItem.Text = "Manage Categories";
             // 
             // tsmCustomers

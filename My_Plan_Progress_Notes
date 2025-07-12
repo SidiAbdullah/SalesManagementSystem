@@ -3,13 +3,10 @@ playlist : 63 videos (16h50) from : https://www.youtube.com/playlist?list=PLwj1Y
 - plan : 20m/d - 1h/d - 2h/d - 4h/d => 51d - 17d - 9d - 5d
 
 - progress:
-7 / 6 & 7 & 8 & 9 & 12 / 2025 : (1h26) & (42m) & (24m) & (26m) & (26m + ?)
-16 / 63 (3h34) ✅
-47 / 63 (13h16) ❌
+7 / 6 & 7 & 8 & 9 & 12 & 13 / 2025 : (1h26) & (42m) & (24m) & (26m) & (44m) & (??)
+16 / 63 (3h52) ✅
+47 / 63 (12h58) ❌
 
 - notes {
-  - how to call a Form method on another Form without making pbject?
+  - how to call a Form method on another Form without making Object?
 }
-
-
-// appear on GitHub?

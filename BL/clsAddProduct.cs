@@ -43,5 +43,11 @@ namespace SalesManagementSystem_wf.BL
             dt = DAL.selectData("getProductsStartsWith", parameters);
             return dt;
         }
+        public void deleteProduct(string Name)
+        {
+            SqlParameter[] parameters = new SqlParameter[1];
+            parameters[0] = new SqlParameter("@Name", Name);
+            DAL.excuteCommand("deleteProduct", parameters);
+        }
     }
 }

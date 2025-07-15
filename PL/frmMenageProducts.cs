@@ -28,6 +28,21 @@ namespace SalesManagementSystem_wf.PL
         {
             frmAddProduct frmAdd = new frmAddProduct();
             frmAdd.ShowDialog();
+            this.dgvProducts.DataSource = displayProducts.getAllProducts();
+        }
+
+        private void btnDeleteProduct_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure?", "Delete product", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            {
+                displayProducts.deleteProduct(dgvProducts.CurrentRow.Cells[1].Value.ToString());
+                MessageBox.Show("Product deleted succussfully!", "Deleting", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.dgvProducts.DataSource =  displayProducts.getAllProducts();
+            }
+            else
+            {
+                MessageBox.Show("Canceled deleting Product!", "Deleting", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

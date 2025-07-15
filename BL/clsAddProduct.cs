@@ -49,5 +49,17 @@ namespace SalesManagementSystem_wf.BL
             parameters[0] = new SqlParameter("@Name", Name);
             DAL.excuteCommand("deleteProduct", parameters);
         }
+        public void UpdateProduct(int ProductID, string Name, string Description, int Stock, int Price, byte[] ProductImage, int CategoryID)
+        {
+            SqlParameter[] parameters = new SqlParameter[7];
+            parameters[0] = new SqlParameter("@ProductID", ProductID);
+            parameters[1] = new SqlParameter("@Name", Name);
+            parameters[2] = new SqlParameter("@Description", Description);
+            parameters[3] = new SqlParameter("@Stock", Stock);
+            parameters[4] = new SqlParameter("@Price", Price);
+            parameters[5] = new SqlParameter("@ProductImage", ProductImage);
+            parameters[6] = new SqlParameter("@CategoryID", CategoryID);
+            DAL.excuteCommand("UpdateProduct", parameters);
+        }
     }
 }

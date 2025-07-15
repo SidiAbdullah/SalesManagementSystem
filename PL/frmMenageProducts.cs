@@ -44,5 +44,19 @@ namespace SalesManagementSystem_wf.PL
                 MessageBox.Show("Canceled deleting Product!", "Deleting", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void btnUpdateProduct_Click(object sender, EventArgs e)
+        {
+            int productID = (int)this.dgvProducts.CurrentRow.Cells[0].Value;
+            frmAddProduct add = new frmAddProduct(productID);
+            add.Text = "Update product";
+            add.btnAdd.Text = "Update";
+            add.txtProductName.Text = this.dgvProducts.CurrentRow.Cells[1].Value.ToString();
+            add.txtStock.Text = this.dgvProducts.CurrentRow.Cells[2].Value.ToString();
+            add.txtDescription.Text = this.dgvProducts.CurrentRow.Cells[3].Value.ToString();
+            add.txtPrice.Text = this.dgvProducts.CurrentRow.Cells[4].Value.ToString();
+            add.cmbCategories.Text = this.dgvProducts.CurrentRow.Cells[5].Value.ToString();
+            add.ShowDialog();
+        }
     }
 }

@@ -33,7 +33,7 @@
             this.txtStock = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.btAdd = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.ptbImage = new System.Windows.Forms.PictureBox();
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
@@ -54,7 +54,7 @@
             this.groupBox1.Controls.Add(this.txtStock);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.btnCancel);
-            this.groupBox1.Controls.Add(this.btAdd);
+            this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.ptbImage);
             this.groupBox1.Controls.Add(this.txtDescription);
             this.groupBox1.Controls.Add(this.txtPrice);
@@ -108,15 +108,15 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // btAdd
+            // btnAdd
             // 
-            this.btAdd.Location = new System.Drawing.Point(422, 564);
-            this.btAdd.Name = "btAdd";
-            this.btAdd.Size = new System.Drawing.Size(75, 29);
-            this.btAdd.TabIndex = 7;
-            this.btAdd.Text = "Add";
-            this.btAdd.UseVisualStyleBackColor = true;
-            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
+            this.btnAdd.Location = new System.Drawing.Point(422, 564);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 29);
+            this.btnAdd.TabIndex = 7;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btAdd_Click);
             // 
             // ptbImage
             // 
@@ -222,20 +222,20 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.ComboBox cmbCategories;
-        private System.Windows.Forms.TextBox txtProductName;
-        private System.Windows.Forms.Label lblCategories;
-        private System.Windows.Forms.PictureBox ptbImage;
-        private System.Windows.Forms.TextBox txtDescription;
-        private System.Windows.Forms.TextBox txtPrice;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btAdd;
-        private System.Windows.Forms.TextBox txtStock;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnAddPhoto;
+        public System.Windows.Forms.Label lblName;
+        public System.Windows.Forms.ComboBox cmbCategories;
+        public System.Windows.Forms.TextBox txtProductName;
+        public System.Windows.Forms.Label lblCategories;
+        public System.Windows.Forms.PictureBox ptbImage;
+        public System.Windows.Forms.TextBox txtDescription;
+        public System.Windows.Forms.TextBox txtPrice;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox txtStock;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Button btnCancel;
+        public System.Windows.Forms.Button btnAdd;
     }
 }

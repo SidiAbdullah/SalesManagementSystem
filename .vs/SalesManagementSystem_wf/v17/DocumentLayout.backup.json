@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "D:\\SalesManagementSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|d:\\salesmanagementsystem\\pl\\frmaddproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmaddproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|d:\\salesmanagementsystem\\pl\\frmmenageproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmmenageproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|D:\\SalesManagementSystem\\bl\\clsaddproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|d:\\salesmanagementsystem\\bl\\clsaddproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:bl\\clsaddproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|D:\\SalesManagementSystem\\pl\\frmmenageproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmmenageproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|D:\\SalesManagementSystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|D:\\SalesManagementSystem\\pl\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,33 +30,46 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "clsAddProduct.cs",
               "DocumentMoniker": "D:\\SalesManagementSystem\\BL\\clsAddProduct.cs",
               "RelativeDocumentMoniker": "BL\\clsAddProduct.cs",
               "ToolTip": "D:\\SalesManagementSystem\\BL\\clsAddProduct.cs",
               "RelativeToolTip": "BL\\clsAddProduct.cs",
-              "ViewState": "AgIAAB8AAACAmZmZmZktwDEAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAMzMzMzMTwDoAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T11:56:47.784Z",
+              "WhenOpened": "2025-07-15T14:54:43.055Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "frmAddProduct.cs",
+              "DocumentMoniker": "D:\\SalesManagementSystem\\PL\\frmAddProduct.cs",
+              "RelativeDocumentMoniker": "PL\\frmAddProduct.cs",
+              "ToolTip": "D:\\SalesManagementSystem\\PL\\frmAddProduct.cs",
+              "RelativeToolTip": "PL\\frmAddProduct.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAQwD4AAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:44:44.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "frmMenageProducts.cs",
               "DocumentMoniker": "D:\\SalesManagementSystem\\PL\\frmMenageProducts.cs",
               "RelativeDocumentMoniker": "PL\\frmMenageProducts.cs",
               "ToolTip": "D:\\SalesManagementSystem\\PL\\frmMenageProducts.cs",
               "RelativeToolTip": "PL\\frmMenageProducts.cs",
-              "ViewState": "AgIAABoAAABgzMzMzMwowB4AAABLAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAADAmZmZmZkhwDkAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T19:00:19.969Z",
+              "WhenOpened": "2025-07-15T17:50:10.907Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "frmMenageProducts.cs [Design]",
               "DocumentMoniker": "D:\\SalesManagementSystem\\PL\\frmMenageProducts.cs",
               "RelativeDocumentMoniker": "PL\\frmMenageProducts.cs",
@@ -69,29 +78,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-12T18:07:12.385Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\SalesManagementSystem\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\SalesManagementSystem\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAoAAACQmZmZmZkhwBMAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T12:18:19.75Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmMain.cs [Design]",
-              "DocumentMoniker": "D:\\SalesManagementSystem\\PL\\frmMain.cs",
-              "RelativeDocumentMoniker": "PL\\frmMain.cs",
-              "ToolTip": "D:\\SalesManagementSystem\\PL\\frmMain.cs [Design]",
-              "RelativeToolTip": "PL\\frmMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T19:02:10.849Z"
             }
           ]
         }

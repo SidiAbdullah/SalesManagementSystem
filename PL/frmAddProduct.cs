@@ -9,6 +9,8 @@ namespace SalesManagementSystem_wf.PL
 {
     public partial class frmAddProduct : Form
     {
+        private int _productID = -1; // for taking the productID from dgvProducts
+
         BL.clsAddProduct add = new BL.clsAddProduct();
         DataTable dt = new DataTable();
         public frmAddProduct()
@@ -17,6 +19,15 @@ namespace SalesManagementSystem_wf.PL
             dt = add.getAllCategories();
             cmbCategories.DataSource = dt;
             cmbCategories.DisplayMember = "Name";
+        }
+        public frmAddProduct(int productID)
+        {
+            InitializeComponent();
+            dt = add.getAllCategories();
+            cmbCategories.DataSource = dt;
+            cmbCategories.DisplayMember = "Name";
+
+            _productID = productID;
         }
         private void btnAddPhoto_Click(object sender, EventArgs e)
         {
@@ -34,17 +45,24 @@ namespace SalesManagementSystem_wf.PL
 
         private void btAdd_Click(object sender, EventArgs e)
         {
-            if (txtProductName.Text != "" && txtStock.Text != "" && txtPrice.Text != "" && ptbImage.Image != null)
+            if (txtProductName.Text != "" && txtStock.Text != "" && txtPrice.Text != "")
             {
                 //
                 MemoryStream ms = new MemoryStream();
                 ptbImage.Image.Save(ms, ptbImage.Image.RawFormat);
                 byte[] byteImage = ms.ToArray();
-                //
-
+                // 
                 BL.clsAddProduct add = new BL.clsAddProduct();
-                add.addProduct(txtProductName.Text, txtDescription.Text, int.Parse(txtStock.Text), int.Parse(txtPrice.Text), byteImage, cmbCategories.SelectedIndex + 1);
-                MessageBox.Show("Product added successfully");
+                if (btnAdd.Text == "Add")
+                {
+                    add.addProduct(txtProductName.Text, txtDescription.Text, int.Parse(txtStock.Text), int.Parse(txtPrice.Text), byteImage, cmbCategories.SelectedIndex + 1);
+                    MessageBox.Show("Product added successfully");
+                }
+                else if (btnAdd.Text == "Update")
+                {
+                    //add.UpdateProduct(_productID, txtProductName.Text, txtDescription.Text, int.Parse(txtStock.Text), int.Parse(txtPrice.Text), byteImage, cmbCategories.SelectedIndex + 1);
+                    MessageBox.Show("Product updated successfully");
+                }
             }
             else
             {

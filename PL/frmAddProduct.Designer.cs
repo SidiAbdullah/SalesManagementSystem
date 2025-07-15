@@ -35,7 +35,7 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btAdd = new System.Windows.Forms.Button();
             this.ptbImage = new System.Windows.Forms.PictureBox();
-            this.txtStockCategory = new System.Windows.Forms.TextBox();
+            this.txtDescription = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@
             this.groupBox1.Controls.Add(this.btnCancel);
             this.groupBox1.Controls.Add(this.btAdd);
             this.groupBox1.Controls.Add(this.ptbImage);
-            this.groupBox1.Controls.Add(this.txtStockCategory);
+            this.groupBox1.Controls.Add(this.txtDescription);
             this.groupBox1.Controls.Add(this.txtPrice);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label2);
@@ -128,14 +128,14 @@
             this.ptbImage.TabIndex = 12;
             this.ptbImage.TabStop = false;
             // 
-            // txtStockCategory
+            // txtDescription
             // 
-            this.txtStockCategory.Location = new System.Drawing.Point(296, 230);
-            this.txtStockCategory.Multiline = true;
-            this.txtStockCategory.Name = "txtStockCategory";
-            this.txtStockCategory.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtStockCategory.Size = new System.Drawing.Size(300, 62);
-            this.txtStockCategory.TabIndex = 4;
+            this.txtDescription.Location = new System.Drawing.Point(296, 230);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtDescription.Size = new System.Drawing.Size(300, 62);
+            this.txtDescription.TabIndex = 4;
             // 
             // txtPrice
             // 
@@ -227,7 +227,7 @@
         private System.Windows.Forms.TextBox txtProductName;
         private System.Windows.Forms.Label lblCategories;
         private System.Windows.Forms.PictureBox ptbImage;
-        private System.Windows.Forms.TextBox txtStockCategory;
+        private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;

@@ -16,14 +16,15 @@ namespace SalesManagementSystem_wf.BL
             dt = DAL.selectData("getAllCategories", null);
             return dt;
         }
-        public void addProduct(string Name, int Stock, int Price, byte[] ProductImage, int CategoryID)
+        public void addProduct(string Name, string Description, int Stock, int Price, byte[] ProductImage, int CategoryID)
         {
-            SqlParameter[] parameters = new SqlParameter[5];
+            SqlParameter[] parameters = new SqlParameter[6];
             parameters[0] = new SqlParameter("@name", Name);
-            parameters[1] = new SqlParameter("@Stock", Stock);
-            parameters[2] = new SqlParameter("@Price", Price);
-            parameters[3] = new SqlParameter("@ProductImage", ProductImage);
-            parameters[4] = new SqlParameter("@CategoryID", CategoryID);
+            parameters[1] = new SqlParameter("@Description", Description);
+            parameters[2] = new SqlParameter("@Stock", Stock);
+            parameters[3] = new SqlParameter("@Price", Price);
+            parameters[4] = new SqlParameter("@ProductImage", ProductImage);
+            parameters[5] = new SqlParameter("@CategoryID", CategoryID);
             DAL.DataAccessLayer dal = new DAL.DataAccessLayer();
             dal.excuteCommand("addProduct", parameters);
         }
@@ -31,6 +32,15 @@ namespace SalesManagementSystem_wf.BL
         {
             DataTable dt = new DataTable();
             dt = DAL.selectData("getAllProducts", null);
+            return dt;
+        }
+
+        public DataTable getProductsStartsWith(string Name)
+        {
+            DataTable dt = new DataTable();
+            SqlParameter[] parameters = new SqlParameter[1];
+            parameters[0] = new SqlParameter("@Name", Name);
+            dt = DAL.selectData("getProductsStartsWith", parameters);
             return dt;
         }
     }

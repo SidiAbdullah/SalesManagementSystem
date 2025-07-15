@@ -43,8 +43,8 @@ namespace SalesManagementSystem_wf.PL
                 //
 
                 BL.clsAddProduct add = new BL.clsAddProduct();
-                add.addProduct(txtProductName.Text, int.Parse(txtStock.Text), int.Parse(txtPrice.Text), byteImage, cmbCategories.SelectedIndex + 1);
-                MessageBox.Show("Product added succusfully to DataBase");
+                add.addProduct(txtProductName.Text, txtDescription.Text, int.Parse(txtStock.Text), int.Parse(txtPrice.Text), byteImage, cmbCategories.SelectedIndex + 1);
+                MessageBox.Show("Product added successfully");
             }
             else
             {

@@ -6,9 +6,11 @@ namespace SalesManagementSystem_wf.PL
 {
     public partial class frmLogin : Form
     {
-        public frmLogin()
+        private frmMain _frmMain;
+        public frmLogin(frmMain frm)
         {
             InitializeComponent();
+            _frmMain = frm;
         }
             
         private void btnCancel_Click(object sender, EventArgs e)
@@ -22,7 +24,7 @@ namespace SalesManagementSystem_wf.PL
             if (dt.Rows.Count > 0)
             {
                 MessageBox.Show("You logged in succesfully!");
-                frmMain.getMainForm.enabeld_tsms();
+                _frmMain.enabeld_tsms();
                 this.Close();
             }
             else

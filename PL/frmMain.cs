@@ -1,37 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SalesManagementSystem_wf.PL
 {
     public partial class frmMain : Form
     {
-        private static frmMain frm;
-        static void frm_FormCLosed(object sender, FormClosedEventArgs e)
-        {
-            frm = null;
-        }
-        public static frmMain getMainForm
-        {
-            get
-            {
-                if (frm == null)
-                {
-                    frm = new frmMain();
-                    frm.FormClosed += new FormClosedEventHandler(frm_FormCLosed);
-                }
-                return frm;
-            }
-        }
         public frmMain()
         {
-            if (frm == null) { frm = this; }
             InitializeComponent();
         }
         public void enabeld_tsms()
@@ -54,7 +29,7 @@ namespace SalesManagementSystem_wf.PL
         }
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmLogin frmLog = new frmLogin();
+            frmLogin frmLog = new frmLogin(this);
             frmLog.ShowDialog();
         }
         private void logputToolStripMenuItem_Click(object sender, EventArgs e)

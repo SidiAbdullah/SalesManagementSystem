@@ -38,3 +38,4 @@ D:\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.csproj.GenerateResou
 D:\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.csproj.CoreCompileInputs.cache
 D:\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.exe
 D:\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.pdb
+D:\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.PL.frmShowImage.resources

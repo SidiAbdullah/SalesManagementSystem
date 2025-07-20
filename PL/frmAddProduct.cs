@@ -57,11 +57,13 @@ namespace SalesManagementSystem_wf.PL
                 {
                     add.addProduct(txtProductName.Text, txtDescription.Text, int.Parse(txtStock.Text), int.Parse(txtPrice.Text), byteImage, cmbCategories.SelectedIndex + 1);
                     MessageBox.Show("Product added successfully");
+                    this.Close();
                 }
                 else if (btnAdd.Text == "Update")
                 {
-                    //add.UpdateProduct(_productID, txtProductName.Text, txtDescription.Text, int.Parse(txtStock.Text), int.Parse(txtPrice.Text), byteImage, cmbCategories.SelectedIndex + 1);
+                    add.UpdateProduct(_productID, txtProductName.Text, txtDescription.Text, int.Parse(txtStock.Text), int.Parse(txtPrice.Text), cmbCategories.SelectedIndex + 1);
                     MessageBox.Show("Product updated successfully");
+                    this.Close();
                 }
             }
             else

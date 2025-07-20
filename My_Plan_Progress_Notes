@@ -3,10 +3,10 @@ playlist : 63 videos (16h50) from : https://www.youtube.com/playlist?list=PLwj1Y
 - plan : 20m/d - 1h/d - 2h/d - 4h/d => 51d - 17d - 9d - 5d
 
 - progress:
-7 / 6 & 7 & 8 & 9 & 12 & 15 / 2025 : (1h26) & (42m) & (24m) & (26m) & (44m) & (30m) & (??)
-20 / 63 (4h22) ✅
-43 / 63 (12h28) ❌
+7 / 6 & 7 & 8 & 9 & 12 & 15 & 20 & ? / 2025 : (1h26) & (42m) & (24m) & (26m) & (44m) & (30m) & (13m) & (??)
+21 / 63 (4h35) ✅
+42 / 63 (12h15) ❌
 
 - notes {
-  - how to make changes on a Form from another Form, without making Object?
+  - how to make changes on a Form from another Form, without making new Object?
 }

@@ -43,13 +43,13 @@ namespace SalesManagementSystem_wf.BL
             dt = DAL.selectData("getProductsStartsWith", parameters);
             return dt;
         }
-        public void deleteProduct(string Name)
+        public void deleteProduct(int ID)
         {
             SqlParameter[] parameters = new SqlParameter[1];
-            parameters[0] = new SqlParameter("@Name", Name);
+            parameters[0] = new SqlParameter("@ID", ID);
             DAL.excuteCommand("deleteProduct", parameters);
         }
-        public void UpdateProduct(int ProductID, string Name, string Description, int Stock, int Price, byte[] ProductImage, int CategoryID)
+        public void UpdateProduct(int ProductID, string Name, string Description, int Stock, int Price, int CategoryID)
         {
             SqlParameter[] parameters = new SqlParameter[7];
             parameters[0] = new SqlParameter("@ProductID", ProductID);
@@ -57,9 +57,17 @@ namespace SalesManagementSystem_wf.BL
             parameters[2] = new SqlParameter("@Description", Description);
             parameters[3] = new SqlParameter("@Stock", Stock);
             parameters[4] = new SqlParameter("@Price", Price);
-            parameters[5] = new SqlParameter("@ProductImage", ProductImage);
+            //parameters[5] = new SqlParameter("@image", image); // still have to update the database proc
             parameters[6] = new SqlParameter("@CategoryID", CategoryID);
             DAL.excuteCommand("UpdateProduct", parameters);
+        }
+        public DataTable getImageProduct(int ID)
+        {
+            DataTable dt = new DataTable();
+            SqlParameter[] parameters = new SqlParameter[1];
+            parameters[0] = new SqlParameter("@ID", ID);
+            dt = DAL.selectData("getImageProduct", parameters);
+            return dt;
         }
     }
 }

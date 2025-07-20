@@ -15,11 +15,11 @@ namespace SalesManagementSystem_wf.PL
             
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
-        BL.clsLogin login = new BL.clsLogin();
         private void btnEnter_Click(object sender, EventArgs e)
         {
+            BL.clsLogin login = new BL.clsLogin();
             DataTable dt = login.login(txtUserName.Text, txtPassword.Text);
             if (dt.Rows.Count > 0)
             {

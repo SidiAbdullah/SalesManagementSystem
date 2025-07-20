@@ -145,6 +145,7 @@
             this.btnProductPhoto.TabIndex = 3;
             this.btnProductPhoto.Text = "Show photo";
             this.btnProductPhoto.UseVisualStyleBackColor = true;
+            this.btnProductPhoto.Click += new System.EventHandler(this.btnProductPhoto_Click);
             // 
             // btnUpdateProduct
             // 

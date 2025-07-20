@@ -73,6 +73,12 @@
     <Compile Include="PL\frmMenageProducts.Designer.cs">
       <DependentUpon>frmMenageProducts.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\frmShowImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmShowImage.Designer.cs">
+      <DependentUpon>frmShowImage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="PL\frmAddProduct.resx">
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frmMenageProducts.resx">
       <DependentUpon>frmMenageProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmShowImage.resx">
+      <DependentUpon>frmShowImage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

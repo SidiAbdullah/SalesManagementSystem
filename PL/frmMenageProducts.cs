@@ -27,9 +27,8 @@ namespace SalesManagementSystem_wf.PL
 
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-            frmAddProduct frmAdd = new frmAddProduct();
+            frmAddProduct frmAdd = new frmAddProduct(this);
             frmAdd.ShowDialog();
-            this.dgvProducts.DataSource = displayProducts.getAllProducts();
         }
 
         private void btnDeleteProduct_Click(object sender, EventArgs e)
@@ -49,7 +48,7 @@ namespace SalesManagementSystem_wf.PL
         private void btnUpdateProduct_Click(object sender, EventArgs e)
         {
             int productID = (int)this.dgvProducts.CurrentRow.Cells[0].Value;
-            frmAddProduct add = new frmAddProduct(productID);
+            frmAddProduct add = new frmAddProduct(this, productID);
             // we can access all the properties because we set modifires to public
             add.Text = "Update product";
             add.btnAdd.Text = "Update";
@@ -59,12 +58,9 @@ namespace SalesManagementSystem_wf.PL
             add.txtPrice.Text = this.dgvProducts.CurrentRow.Cells[4].Value.ToString();
             add.cmbCategories.Text = this.dgvProducts.CurrentRow.Cells[5].Value.ToString();
             byte[] image = (byte[])displayProducts.getImageProduct(productID).Rows[0][0];
-            //
             MemoryStream ms = new MemoryStream(image);
             add.ptbImage.Image = Image.FromStream(ms);
-            //
             add.ShowDialog();
-            this.dgvProducts.DataSource = displayProducts.getAllProducts();
         }
 
         private void btnProductPhoto_Click(object sender, EventArgs e)
@@ -75,6 +71,11 @@ namespace SalesManagementSystem_wf.PL
             MemoryStream ms = new MemoryStream(image);
             showImage.ptbProductImage.Image = Image.FromStream(ms);
             showImage.ShowDialog();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

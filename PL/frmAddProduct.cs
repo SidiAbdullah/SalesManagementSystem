@@ -9,6 +9,7 @@ namespace SalesManagementSystem_wf.PL
 {
     public partial class frmAddProduct : Form
     {
+        private frmMenageProducts _frmMenage; // for taking the main meganeProduct object (for not working on new object)
         private int _productID = -1; // for taking the productID from dgvProducts
 
         BL.clsAddProduct add = new BL.clsAddProduct();
@@ -20,7 +21,7 @@ namespace SalesManagementSystem_wf.PL
             cmbCategories.DataSource = dt;
             cmbCategories.DisplayMember = "Name";
         }
-        public frmAddProduct(int productID)
+        public frmAddProduct(frmMenageProducts frmMenage, int productID = -1)
         {
             InitializeComponent();
             dt = add.getAllCategories();
@@ -28,6 +29,7 @@ namespace SalesManagementSystem_wf.PL
             cmbCategories.DisplayMember = "Name";
 
             _productID = productID;
+            _frmMenage = frmMenage;
         }
         private void btnAddPhoto_Click(object sender, EventArgs e)
         {
@@ -55,14 +57,14 @@ namespace SalesManagementSystem_wf.PL
                 {
                     add.addProduct(txtProductName.Text, txtDescription.Text, int.Parse(txtStock.Text), int.Parse(txtPrice.Text), byteImage, cmbCategories.SelectedIndex + 1);
                     MessageBox.Show("Product added successfully");
-                    this.Close();
                 }
                 else if (btnAdd.Text == "Update")
                 {
                     add.UpdateProduct(_productID, txtProductName.Text, txtDescription.Text, int.Parse(txtStock.Text), int.Parse(txtPrice.Text), byteImage, cmbCategories.SelectedIndex + 1);
                     MessageBox.Show("Product updated successfully");
-                    this.Close();
                 }
+                _frmMenage.dgvProducts.DataSource = add.getAllProducts();
+                this.Close();
             }
             else
             {

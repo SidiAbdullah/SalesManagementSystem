@@ -34,9 +34,6 @@
             this.dgvProducts = new System.Windows.Forms.DataGridView();
             this.grbOpp = new System.Windows.Forms.GroupBox();
             this.btnExit = new System.Windows.Forms.Button();
-            this.btnSaveInExel = new System.Windows.Forms.Button();
-            this.btnDisplayAll = new System.Windows.Forms.Button();
-            this.btnDisplayProduct = new System.Windows.Forms.Button();
             this.btnProductPhoto = new System.Windows.Forms.Button();
             this.btnUpdateProduct = new System.Windows.Forms.Button();
             this.btnDeleteProduct = new System.Windows.Forms.Button();
@@ -49,15 +46,15 @@
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(134, 41);
+            this.lblSearch.Location = new System.Drawing.Point(152, 47);
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(232, 20);
+            this.lblSearch.Size = new System.Drawing.Size(161, 20);
             this.lblSearch.TabIndex = 0;
-            this.lblSearch.Text = "Enter the word to search about:";
+            this.lblSearch.Text = "Enter Product Name :";
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(421, 38);
+            this.txtSearch.Location = new System.Drawing.Point(376, 44);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(405, 26);
             this.txtSearch.TabIndex = 0;
@@ -68,7 +65,7 @@
             this.grbProductList.Controls.Add(this.dgvProducts);
             this.grbProductList.Location = new System.Drawing.Point(51, 97);
             this.grbProductList.Name = "grbProductList";
-            this.grbProductList.Size = new System.Drawing.Size(981, 521);
+            this.grbProductList.Size = new System.Drawing.Size(842, 521);
             this.grbProductList.TabIndex = 2;
             this.grbProductList.TabStop = false;
             this.grbProductList.Text = "Products list";
@@ -81,65 +78,36 @@
             this.dgvProducts.Name = "dgvProducts";
             this.dgvProducts.RowHeadersWidth = 62;
             this.dgvProducts.RowTemplate.Height = 28;
-            this.dgvProducts.Size = new System.Drawing.Size(981, 276);
+            this.dgvProducts.Size = new System.Drawing.Size(842, 276);
             this.dgvProducts.TabIndex = 0;
             // 
             // grbOpp
             // 
             this.grbOpp.Controls.Add(this.btnExit);
-            this.grbOpp.Controls.Add(this.btnSaveInExel);
-            this.grbOpp.Controls.Add(this.btnDisplayAll);
-            this.grbOpp.Controls.Add(this.btnDisplayProduct);
             this.grbOpp.Controls.Add(this.btnProductPhoto);
             this.grbOpp.Controls.Add(this.btnUpdateProduct);
             this.grbOpp.Controls.Add(this.btnDeleteProduct);
             this.grbOpp.Controls.Add(this.btnAddProduct);
             this.grbOpp.Location = new System.Drawing.Point(51, 416);
             this.grbOpp.Name = "grbOpp";
-            this.grbOpp.Size = new System.Drawing.Size(981, 152);
+            this.grbOpp.Size = new System.Drawing.Size(842, 152);
             this.grbOpp.TabIndex = 1;
             this.grbOpp.TabStop = false;
             this.grbOpp.Text = "Opperations";
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(495, 93);
+            this.btnExit.Location = new System.Drawing.Point(669, 37);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(128, 31);
             this.btnExit.TabIndex = 7;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
-            // 
-            // btnSaveInExel
-            // 
-            this.btnSaveInExel.Location = new System.Drawing.Point(340, 93);
-            this.btnSaveInExel.Name = "btnSaveInExel";
-            this.btnSaveInExel.Size = new System.Drawing.Size(128, 31);
-            this.btnSaveInExel.TabIndex = 6;
-            this.btnSaveInExel.Text = "Save in Exel";
-            this.btnSaveInExel.UseVisualStyleBackColor = true;
-            // 
-            // btnDisplayAll
-            // 
-            this.btnDisplayAll.Location = new System.Drawing.Point(819, 37);
-            this.btnDisplayAll.Name = "btnDisplayAll";
-            this.btnDisplayAll.Size = new System.Drawing.Size(128, 31);
-            this.btnDisplayAll.TabIndex = 5;
-            this.btnDisplayAll.Text = "Display all";
-            this.btnDisplayAll.UseVisualStyleBackColor = true;
-            // 
-            // btnDisplayProduct
-            // 
-            this.btnDisplayProduct.Location = new System.Drawing.Point(647, 37);
-            this.btnDisplayProduct.Name = "btnDisplayProduct";
-            this.btnDisplayProduct.Size = new System.Drawing.Size(128, 31);
-            this.btnDisplayProduct.TabIndex = 4;
-            this.btnDisplayProduct.Text = "Display product";
-            this.btnDisplayProduct.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnProductPhoto
             // 
-            this.btnProductPhoto.Location = new System.Drawing.Point(495, 37);
+            this.btnProductPhoto.Location = new System.Drawing.Point(508, 37);
             this.btnProductPhoto.Name = "btnProductPhoto";
             this.btnProductPhoto.Size = new System.Drawing.Size(128, 31);
             this.btnProductPhoto.TabIndex = 3;
@@ -149,7 +117,7 @@
             // 
             // btnUpdateProduct
             // 
-            this.btnUpdateProduct.Location = new System.Drawing.Point(340, 37);
+            this.btnUpdateProduct.Location = new System.Drawing.Point(347, 37);
             this.btnUpdateProduct.Name = "btnUpdateProduct";
             this.btnUpdateProduct.Size = new System.Drawing.Size(128, 31);
             this.btnUpdateProduct.TabIndex = 2;
@@ -159,7 +127,7 @@
             // 
             // btnDeleteProduct
             // 
-            this.btnDeleteProduct.Location = new System.Drawing.Point(185, 37);
+            this.btnDeleteProduct.Location = new System.Drawing.Point(186, 37);
             this.btnDeleteProduct.Name = "btnDeleteProduct";
             this.btnDeleteProduct.Size = new System.Drawing.Size(128, 31);
             this.btnDeleteProduct.TabIndex = 1;
@@ -181,7 +149,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1091, 672);
+            this.ClientSize = new System.Drawing.Size(957, 672);
             this.Controls.Add(this.grbOpp);
             this.Controls.Add(this.grbProductList);
             this.Controls.Add(this.txtSearch);
@@ -201,15 +169,12 @@
         private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.GroupBox grbProductList;
-        private System.Windows.Forms.DataGridView dgvProducts;
         private System.Windows.Forms.GroupBox grbOpp;
         private System.Windows.Forms.Button btnProductPhoto;
         private System.Windows.Forms.Button btnUpdateProduct;
         private System.Windows.Forms.Button btnDeleteProduct;
         private System.Windows.Forms.Button btnAddProduct;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnSaveInExel;
-        private System.Windows.Forms.Button btnDisplayAll;
-        private System.Windows.Forms.Button btnDisplayProduct;
+        public System.Windows.Forms.DataGridView dgvProducts;
     }
 }

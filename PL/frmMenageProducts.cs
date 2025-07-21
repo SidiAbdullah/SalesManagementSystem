@@ -72,10 +72,8 @@ namespace SalesManagementSystem_wf.PL
             frmShowImage showImage = new frmShowImage();
             int productID = (int)this.dgvProducts.CurrentRow.Cells[0].Value;
             byte[] image = (byte[])displayProducts.getImageProduct(productID).Rows[0][0];
-            //
             MemoryStream ms = new MemoryStream(image);
             showImage.ptbProductImage.Image = Image.FromStream(ms);
-            //
             showImage.ShowDialog();
         }
     }

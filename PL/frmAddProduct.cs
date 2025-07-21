@@ -47,11 +47,9 @@ namespace SalesManagementSystem_wf.PL
         {
             if (txtProductName.Text != "" && txtStock.Text != "" && txtPrice.Text != "")
             {
-                //
                 MemoryStream ms = new MemoryStream();
                 ptbImage.Image.Save(ms, ptbImage.Image.RawFormat);
                 byte[] byteImage = ms.ToArray();
-                // 
                 BL.clsAddProduct add = new BL.clsAddProduct();
                 if (btnAdd.Text == "Add")
                 {
@@ -61,7 +59,7 @@ namespace SalesManagementSystem_wf.PL
                 }
                 else if (btnAdd.Text == "Update")
                 {
-                    add.UpdateProduct(_productID, txtProductName.Text, txtDescription.Text, int.Parse(txtStock.Text), int.Parse(txtPrice.Text), cmbCategories.SelectedIndex + 1);
+                    add.UpdateProduct(_productID, txtProductName.Text, txtDescription.Text, int.Parse(txtStock.Text), int.Parse(txtPrice.Text), byteImage, cmbCategories.SelectedIndex + 1);
                     MessageBox.Show("Product updated successfully");
                     this.Close();
                 }

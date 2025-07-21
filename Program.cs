@@ -17,7 +17,7 @@ namespace SalesManagementSystem_wf
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMenageProducts());
+            Application.Run(new frmMenageCategories());
         }
     }
 }

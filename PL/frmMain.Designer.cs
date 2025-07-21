@@ -135,6 +135,7 @@
             this.manageCategoriesToolStripMenuItem.Name = "manageCategoriesToolStripMenuItem";
             this.manageCategoriesToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.manageCategoriesToolStripMenuItem.Text = "Manage Categories";
+            this.manageCategoriesToolStripMenuItem.Click += new System.EventHandler(this.manageCategoriesToolStripMenuItem_Click);
             // 
             // tsmCustomers
             // 

@@ -37,7 +37,6 @@
             this.tsmProducts = new System.Windows.Forms.ToolStripMenuItem();
             this.newProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageCategoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmCustomers = new System.Windows.Forms.ToolStripMenuItem();
             this.newCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -111,7 +110,6 @@
             this.tsmProducts.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newProductToolStripMenuItem,
             this.manageProductsToolStripMenuItem,
-            this.newToolStripMenuItem,
             this.manageCategoriesToolStripMenuItem});
             this.tsmProducts.Enabled = false;
             this.tsmProducts.Name = "tsmProducts";
@@ -131,12 +129,6 @@
             this.manageProductsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.manageProductsToolStripMenuItem.Text = "Manage products";
             this.manageProductsToolStripMenuItem.Click += new System.EventHandler(this.manageProductsToolStripMenuItem_Click);
-            // 
-            // newToolStripMenuItem
-            // 
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.newToolStripMenuItem.Text = "Add new category";
             // 
             // manageCategoriesToolStripMenuItem
             // 
@@ -237,7 +229,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsmProducts;
         private System.Windows.Forms.ToolStripMenuItem newProductToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manageProductsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manageCategoriesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tsmCustomers;
         private System.Windows.Forms.ToolStripMenuItem newCustomerToolStripMenuItem;

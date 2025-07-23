@@ -69,5 +69,27 @@ namespace SalesManagementSystem_wf.BL
             dt = DAL.selectData("getImageProduct", parameters);
             return dt;
         }
+        
+        // let's add categories
+        public void insertCategory(int ID, string Name)
+        {
+            SqlParameter[] parameters = new SqlParameter[2];
+            parameters[0] = new SqlParameter("@ID", ID);
+            parameters[1] = new SqlParameter("@Name", Name);
+            DAL.excuteCommand("insertCategory", parameters);
+        }
+        public void editCategory(int ID, string Name)
+        {
+            SqlParameter[] parameters = new SqlParameter[2];
+            parameters[0] = new SqlParameter("@ID", ID);
+            parameters[1] = new SqlParameter("@Name", Name);
+            DAL.excuteCommand("editCategory", parameters);
+        }
+        public void deleteCategory(int ID)
+        {
+            SqlParameter[] parameters = new SqlParameter[1];
+            parameters[0] = new SqlParameter("@ID", ID);
+            DAL.excuteCommand("deleteCategory", parameters);
+        }
     }
 }

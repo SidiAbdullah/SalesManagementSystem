@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.grbCategories = new System.Windows.Forms.GroupBox();
-            this.btnFirst = new System.Windows.Forms.Button();
-            this.btnPrevious = new System.Windows.Forms.Button();
-            this.btnMid = new System.Windows.Forms.Button();
-            this.btnNext = new System.Windows.Forms.Button();
+            this.lblPosition = new System.Windows.Forms.Label();
             this.btnLast = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnPrevious = new System.Windows.Forms.Button();
+            this.btnFirst = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnAddCategory = new System.Windows.Forms.Button();
             this.btnEditCategory = new System.Windows.Forms.Button();
@@ -52,11 +52,11 @@
             // 
             // grbCategories
             // 
-            this.grbCategories.Controls.Add(this.btnFirst);
-            this.grbCategories.Controls.Add(this.btnPrevious);
-            this.grbCategories.Controls.Add(this.btnMid);
-            this.grbCategories.Controls.Add(this.btnNext);
+            this.grbCategories.Controls.Add(this.lblPosition);
             this.grbCategories.Controls.Add(this.btnLast);
+            this.grbCategories.Controls.Add(this.btnNext);
+            this.grbCategories.Controls.Add(this.btnPrevious);
+            this.grbCategories.Controls.Add(this.btnFirst);
             this.grbCategories.Controls.Add(this.btnExit);
             this.grbCategories.Controls.Add(this.btnAddCategory);
             this.grbCategories.Controls.Add(this.btnEditCategory);
@@ -73,95 +73,105 @@
             this.grbCategories.TabStop = false;
             this.grbCategories.Text = "Categories Infos :";
             // 
-            // btnFirst
+            // lblPosition
             // 
-            this.btnFirst.Location = new System.Drawing.Point(567, 216);
-            this.btnFirst.Name = "btnFirst";
-            this.btnFirst.Size = new System.Drawing.Size(49, 34);
-            this.btnFirst.TabIndex = 18;
-            this.btnFirst.Text = ">>|";
-            this.btnFirst.UseVisualStyleBackColor = true;
-            // 
-            // btnPrevious
-            // 
-            this.btnPrevious.Location = new System.Drawing.Point(485, 216);
-            this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(51, 34);
-            this.btnPrevious.TabIndex = 17;
-            this.btnPrevious.Text = ">>";
-            this.btnPrevious.UseVisualStyleBackColor = true;
-            // 
-            // btnMid
-            // 
-            this.btnMid.Location = new System.Drawing.Point(403, 216);
-            this.btnMid.Name = "btnMid";
-            this.btnMid.Size = new System.Drawing.Size(51, 34);
-            this.btnMid.TabIndex = 16;
-            this.btnMid.Text = "???";
-            this.btnMid.UseVisualStyleBackColor = true;
-            // 
-            // btnNext
-            // 
-            this.btnNext.Location = new System.Drawing.Point(321, 216);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(51, 34);
-            this.btnNext.TabIndex = 15;
-            this.btnNext.Text = "<<";
-            this.btnNext.UseVisualStyleBackColor = true;
+            this.lblPosition.AutoSize = true;
+            this.lblPosition.Location = new System.Drawing.Point(423, 223);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.Size = new System.Drawing.Size(27, 20);
+            this.lblPosition.TabIndex = 19;
+            this.lblPosition.Text = "??";
             // 
             // btnLast
             // 
-            this.btnLast.Location = new System.Drawing.Point(241, 216);
+            this.btnLast.Location = new System.Drawing.Point(583, 216);
             this.btnLast.Name = "btnLast";
             this.btnLast.Size = new System.Drawing.Size(49, 34);
-            this.btnLast.TabIndex = 14;
-            this.btnLast.Text = "|<<";
+            this.btnLast.TabIndex = 18;
+            this.btnLast.Text = ">>|";
             this.btnLast.UseVisualStyleBackColor = true;
+            this.btnLast.Click += new System.EventHandler(this.btnFirst_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.Location = new System.Drawing.Point(492, 216);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(49, 34);
+            this.btnNext.TabIndex = 17;
+            this.btnNext.Text = ">>";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // btnPrevious
+            // 
+            this.btnPrevious.Location = new System.Drawing.Point(332, 216);
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.Size = new System.Drawing.Size(49, 34);
+            this.btnPrevious.TabIndex = 15;
+            this.btnPrevious.Text = "<<";
+            this.btnPrevious.UseVisualStyleBackColor = true;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
+            // 
+            // btnFirst
+            // 
+            this.btnFirst.Location = new System.Drawing.Point(241, 216);
+            this.btnFirst.Name = "btnFirst";
+            this.btnFirst.Size = new System.Drawing.Size(49, 34);
+            this.btnFirst.TabIndex = 14;
+            this.btnFirst.Text = "|<<";
+            this.btnFirst.UseVisualStyleBackColor = true;
+            this.btnFirst.Click += new System.EventHandler(this.btnLast_Click);
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(568, 269);
+            this.btnExit.Location = new System.Drawing.Point(565, 269);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(49, 34);
+            this.btnExit.Size = new System.Drawing.Size(75, 34);
             this.btnExit.TabIndex = 13;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnAddCategory
             // 
-            this.btnAddCategory.Location = new System.Drawing.Point(314, 269);
+            this.btnAddCategory.Enabled = false;
+            this.btnAddCategory.Location = new System.Drawing.Point(322, 269);
             this.btnAddCategory.Name = "btnAddCategory";
-            this.btnAddCategory.Size = new System.Drawing.Size(51, 34);
+            this.btnAddCategory.Size = new System.Drawing.Size(75, 34);
             this.btnAddCategory.TabIndex = 12;
             this.btnAddCategory.Text = "Add";
             this.btnAddCategory.UseVisualStyleBackColor = true;
+            this.btnAddCategory.Click += new System.EventHandler(this.btnAddCategory_Click);
             // 
             // btnEditCategory
             // 
-            this.btnEditCategory.Location = new System.Drawing.Point(387, 269);
+            this.btnEditCategory.Location = new System.Drawing.Point(403, 269);
             this.btnEditCategory.Name = "btnEditCategory";
-            this.btnEditCategory.Size = new System.Drawing.Size(71, 34);
+            this.btnEditCategory.Size = new System.Drawing.Size(75, 34);
             this.btnEditCategory.TabIndex = 11;
             this.btnEditCategory.Text = "Update";
             this.btnEditCategory.UseVisualStyleBackColor = true;
+            this.btnEditCategory.Click += new System.EventHandler(this.btnEditCategory_Click);
             // 
             // btnDeleteCategory
             // 
-            this.btnDeleteCategory.Location = new System.Drawing.Point(480, 269);
+            this.btnDeleteCategory.Location = new System.Drawing.Point(484, 269);
             this.btnDeleteCategory.Name = "btnDeleteCategory";
-            this.btnDeleteCategory.Size = new System.Drawing.Size(66, 34);
+            this.btnDeleteCategory.Size = new System.Drawing.Size(75, 34);
             this.btnDeleteCategory.TabIndex = 10;
             this.btnDeleteCategory.Text = "Delete";
             this.btnDeleteCategory.UseVisualStyleBackColor = true;
+            this.btnDeleteCategory.Click += new System.EventHandler(this.btnDeleteCategory_Click);
             // 
             // btnNewCategory
             // 
             this.btnNewCategory.Location = new System.Drawing.Point(241, 269);
             this.btnNewCategory.Name = "btnNewCategory";
-            this.btnNewCategory.Size = new System.Drawing.Size(51, 34);
+            this.btnNewCategory.Size = new System.Drawing.Size(75, 34);
             this.btnNewCategory.TabIndex = 9;
             this.btnNewCategory.Text = "New";
             this.btnNewCategory.UseVisualStyleBackColor = true;
+            this.btnNewCategory.Click += new System.EventHandler(this.btnNewCategory_Click);
             // 
             // txtCategoryDesc
             // 
@@ -169,7 +179,7 @@
             this.txtCategoryDesc.Multiline = true;
             this.txtCategoryDesc.Name = "txtCategoryDesc";
             this.txtCategoryDesc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtCategoryDesc.Size = new System.Drawing.Size(376, 96);
+            this.txtCategoryDesc.Size = new System.Drawing.Size(391, 96);
             this.txtCategoryDesc.TabIndex = 3;
             // 
             // txtCategoryID
@@ -253,10 +263,10 @@
         private System.Windows.Forms.Button btnNewCategory;
         private System.Windows.Forms.GroupBox grbCategorisList;
         private System.Windows.Forms.DataGridView dgvCategories;
-        private System.Windows.Forms.Button btnFirst;
-        private System.Windows.Forms.Button btnPrevious;
-        private System.Windows.Forms.Button btnMid;
-        private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnLast;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Button btnPrevious;
+        private System.Windows.Forms.Button btnFirst;
+        private System.Windows.Forms.Label lblPosition;
     }
 }

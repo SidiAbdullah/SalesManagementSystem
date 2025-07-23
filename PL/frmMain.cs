@@ -54,5 +54,11 @@ namespace SalesManagementSystem_wf.PL
             frmMenageCategories menageCategories = new frmMenageCategories();
             menageCategories.ShowDialog();
         }
+
+        private void newCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddCustomers frmCustomers = new frmAddCustomers();
+            frmCustomers.ShowDialog();
+        }
     }
 }

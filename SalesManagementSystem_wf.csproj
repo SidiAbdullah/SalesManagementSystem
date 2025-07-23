@@ -46,9 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BL\clsAddProduct.cs" />
+    <Compile Include="BL\clsAdd.cs" />
     <Compile Include="BL\clsLogin.cs" />
     <Compile Include="DAL\clsDataLayer.cs" />
+    <Compile Include="PL\frmAddCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddCustomers.Designer.cs">
+      <DependentUpon>frmAddCustomers.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frmAddProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PL\frmAddCustomers.resx">
+      <DependentUpon>frmAddCustomers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\frmAddProduct.resx">
       <DependentUpon>frmAddProduct.cs</DependentUpon>
     </EmbeddedResource>

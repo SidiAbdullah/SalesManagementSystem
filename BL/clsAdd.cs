@@ -4,10 +4,11 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace SalesManagementSystem_wf.BL
 {
-    class clsAddProduct
+    class clsAdd
     {
         DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();
         public DataTable getAllCategories()
@@ -90,6 +91,37 @@ namespace SalesManagementSystem_wf.BL
             SqlParameter[] parameters = new SqlParameter[1];
             parameters[0] = new SqlParameter("@ID", ID);
             DAL.excuteCommand("deleteCategory", parameters);
+        }
+        // let's add customers
+        public DataTable getAllCustomers()
+        {
+            return DAL.selectData("getAllCustomers", null);
+        }
+        public void insertCustomer(string FirstName, string LastName, string Phone, string Email, byte[] Image)
+        {
+            SqlParameter[] parameters = new SqlParameter[5];
+            parameters[0] = new SqlParameter("@FirstName", FirstName);
+            parameters[1] = new SqlParameter("@LastName", LastName);
+            parameters[2] = new SqlParameter("@Phone", Phone);
+            parameters[3] = new SqlParameter("@Email", Email);
+            parameters[4] = new SqlParameter("@Image", Image);
+            DAL.excuteCommand("insertCustomer", parameters);
+        }
+        public void updateCustomer(string FirstName, string LastName, string Phone, string Email, byte[] Image)
+        {
+            SqlParameter[] parameters = new SqlParameter[5];
+            parameters[0] = new SqlParameter("@FirstName", FirstName);
+            parameters[1] = new SqlParameter("@LastName", LastName);
+            parameters[2] = new SqlParameter("@Phone", Phone);
+            parameters[3] = new SqlParameter("@Email", Email);
+            parameters[4] = new SqlParameter("@Image", Image);
+            DAL.excuteCommand("updateCustomer", parameters);
+        }
+        public void deleteCustomer(string Phone)
+        {
+            SqlParameter[] parameters = new SqlParameter[1];
+            parameters[0] = new SqlParameter("@Phone", Phone);
+            DAL.excuteCommand("deleteCustomer", parameters);
         }
     }
 }

@@ -153,30 +153,31 @@
             // newCustomerToolStripMenuItem
             // 
             this.newCustomerToolStripMenuItem.Name = "newCustomerToolStripMenuItem";
-            this.newCustomerToolStripMenuItem.Size = new System.Drawing.Size(268, 34);
+            this.newCustomerToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.newCustomerToolStripMenuItem.Text = "Add new customer";
+            this.newCustomerToolStripMenuItem.Click += new System.EventHandler(this.newCustomerToolStripMenuItem_Click);
             // 
             // manageCustomersToolStripMenuItem
             // 
             this.manageCustomersToolStripMenuItem.Name = "manageCustomersToolStripMenuItem";
-            this.manageCustomersToolStripMenuItem.Size = new System.Drawing.Size(268, 34);
+            this.manageCustomersToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.manageCustomersToolStripMenuItem.Text = "Manage Customers";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(265, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(267, 6);
             // 
             // newSaleToolStripMenuItem
             // 
             this.newSaleToolStripMenuItem.Name = "newSaleToolStripMenuItem";
-            this.newSaleToolStripMenuItem.Size = new System.Drawing.Size(268, 34);
+            this.newSaleToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.newSaleToolStripMenuItem.Text = "Add new sale";
             // 
             // manageSalesToolStripMenuItem
             // 
             this.manageSalesToolStripMenuItem.Name = "manageSalesToolStripMenuItem";
-            this.manageSalesToolStripMenuItem.Size = new System.Drawing.Size(268, 34);
+            this.manageSalesToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.manageSalesToolStripMenuItem.Text = "Manage Sales";
             // 
             // tsmUsers

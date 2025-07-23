@@ -12,7 +12,7 @@ namespace SalesManagementSystem_wf.PL
         private frmMenageProducts _frmMenage; // for taking the main meganeProduct object (for not working on new object)
         private int _productID = -1; // for taking the productID from dgvProducts
 
-        BL.clsAddProduct add = new BL.clsAddProduct();
+        BL.clsAdd add = new BL.clsAdd();
         DataTable dt = new DataTable();
         public frmAddProduct()
         {
@@ -52,7 +52,7 @@ namespace SalesManagementSystem_wf.PL
                 MemoryStream ms = new MemoryStream();
                 ptbImage.Image.Save(ms, ptbImage.Image.RawFormat);
                 byte[] byteImage = ms.ToArray();
-                BL.clsAddProduct add = new BL.clsAddProduct();
+                BL.clsAdd add = new BL.clsAdd();
                 if (btnAdd.Text == "Add")
                 {
                     add.addProduct(txtProductName.Text, txtDescription.Text, int.Parse(txtStock.Text), int.Parse(txtPrice.Text), byteImage, cmbCategories.SelectedIndex + 1);

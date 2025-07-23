@@ -13,7 +13,7 @@ namespace SalesManagementSystem_wf.PL
 {
     public partial class frmMenageProducts : Form
     {
-        BL.clsAddProduct displayProducts = new BL.clsAddProduct();
+        BL.clsAdd displayProducts = new BL.clsAdd();
         public frmMenageProducts()
         {
             InitializeComponent();

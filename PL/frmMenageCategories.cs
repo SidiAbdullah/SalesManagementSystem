@@ -39,7 +39,6 @@ namespace SalesManagementSystem_wf.PL
             // Method 2: Bind DataGridView data to TextBoxes manually using SelectionChanged event  
             dgvCategories.SelectionChanged += dgvCategories_SelectionChanged; // see the event method below
 
-            // 
             bmb = this.BindingContext[dt];
             lblPosition.Text = bmb.Position + 1 + " / " + bmb.Count;
         }
@@ -67,14 +66,13 @@ namespace SalesManagementSystem_wf.PL
             bmb.Position = bmb.Count;
             lblPosition.Text = bmb.Position + 1 + " / " + bmb.Count;
         }
-        // error here when clicking New button twice!
         private void btnNewCategory_Click(object sender, EventArgs e)
         {
-            bmb.AddNew();
             btnAddCategory.Enabled = true;
             btnNewCategory.Enabled = false;
             int ID = Convert.ToInt32(dt.Rows[dt.Rows.Count - 1][0]) + 1;
             txtCategoryID.Text = ID.ToString();
+            txtCategoryDesc.Text = "";
             txtCategoryDesc.Focus();
         }
 
@@ -84,10 +82,12 @@ namespace SalesManagementSystem_wf.PL
             btnNewCategory.Enabled = true;
             if (txtCategoryDesc.Text != "")
             {
-                add.insertCategory(int.Parse(txtCategoryID.Text), txtCategoryDesc.Text);
                 if (MessageBox.Show("Are you sure", "Adding Category", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
-                    this.dgvCategories.DataSource = add.getAllCategories();
+                    add.insertCategory(int.Parse(txtCategoryID.Text), txtCategoryDesc.Text);
+                    dt = add.getAllCategories();
+                    bmb = this.BindingContext[dt];
+                    this.dgvCategories.DataSource = dt;
                     lblPosition.Text = bmb.Position + 1 + " / " + bmb.Count;
                 }
             }
@@ -106,7 +106,10 @@ namespace SalesManagementSystem_wf.PL
             {
                 add.editCategory(ID, Name);
                 MessageBox.Show("Edited successfully");
-                this.dgvCategories.DataSource = add.getAllCategories();
+                dt = add.getAllCategories();
+                bmb = this.BindingContext[dt];
+                this.dgvCategories.DataSource = dt;
+                lblPosition.Text = bmb.Position + 1 + " / " + bmb.Count;
             }
         }
 
@@ -116,9 +119,10 @@ namespace SalesManagementSystem_wf.PL
             {
                 add.deleteCategory(int.Parse(txtCategoryID.Text));
                 MessageBox.Show("Deleted successfully");
-                this.dgvCategories.DataSource = add.getAllCategories();
+                dt = add.getAllCategories();
+                bmb = this.BindingContext[dt];
+                this.dgvCategories.DataSource = dt;
                 lblPosition.Text = bmb.Position + 1 + " / " + bmb.Count;
-
             }
         }
 

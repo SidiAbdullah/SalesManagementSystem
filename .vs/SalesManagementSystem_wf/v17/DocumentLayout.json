@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "D:\\SalesManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|d:\\salesmanagementsystem\\pl\\frmmenagecategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmmenagecategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|D:\\SalesManagementSystem\\pl\\frmmenagecategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmmenagecategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|d:\\salesmanagementsystem\\bl\\clsaddproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|d:\\salesmanagementsystem\\pl\\frmmenagecategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmmenagecategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|D:\\SalesManagementSystem\\bl\\clsaddproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:bl\\clsaddproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -38,25 +38,24 @@
               "RelativeToolTip": "BL\\clsAddProduct.cs",
               "ViewState": "AgIAAEcAAACAMzMzMzMbwFUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T18:33:56.059Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T18:33:56.059Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "frmMenageCategories.cs",
               "DocumentMoniker": "D:\\SalesManagementSystem\\PL\\frmMenageCategories.cs",
               "RelativeDocumentMoniker": "PL\\frmMenageCategories.cs",
               "ToolTip": "D:\\SalesManagementSystem\\PL\\frmMenageCategories.cs",
               "RelativeToolTip": "PL\\frmMenageCategories.cs",
-              "ViewState": "AgIAADMAAACgmZmZmZktwEUAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAACAZmZmZmY8wDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-21T05:28:12.97Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "frmMenageCategories.cs [Design]",
               "DocumentMoniker": "D:\\SalesManagementSystem\\PL\\frmMenageCategories.cs",
               "RelativeDocumentMoniker": "PL\\frmMenageCategories.cs",
@@ -75,8 +74,7 @@
               "ToolTip": "D:\\SalesManagementSystem\\PL\\frmMain.cs [Design]",
               "RelativeToolTip": "PL\\frmMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T03:22:44.533Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-07-21T03:22:44.533Z"
             }
           ]
         }

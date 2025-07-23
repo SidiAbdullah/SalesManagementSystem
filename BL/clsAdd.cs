@@ -97,14 +97,24 @@ namespace SalesManagementSystem_wf.BL
         {
             return DAL.selectData("getAllCustomers", null);
         }
-        public void insertCustomer(string FirstName, string LastName, string Phone, string Email, byte[] Image)
+        public void insertCustomer(string FirstName, string LastName, string Phone, string Email, byte[] Image, string imageHandler)
         {
-            SqlParameter[] parameters = new SqlParameter[5];
+            SqlParameter[] parameters = new SqlParameter[6];
             parameters[0] = new SqlParameter("@FirstName", FirstName);
             parameters[1] = new SqlParameter("@LastName", LastName);
             parameters[2] = new SqlParameter("@Phone", Phone);
             parameters[3] = new SqlParameter("@Email", Email);
-            parameters[4] = new SqlParameter("@Image", Image);
+            parameters[4] = new SqlParameter("@Image", SqlDbType.Image);
+            if (Image == null)
+            {
+                parameters[4].Value = DBNull.Value;
+            }
+            else
+            {
+                parameters[4].Value = Image;
+            }
+
+            parameters[5] = new SqlParameter("@imageHandler", imageHandler);
             DAL.excuteCommand("insertCustomer", parameters);
         }
         public void updateCustomer(string FirstName, string LastName, string Phone, string Email, byte[] Image)
@@ -114,13 +124,21 @@ namespace SalesManagementSystem_wf.BL
             parameters[1] = new SqlParameter("@LastName", LastName);
             parameters[2] = new SqlParameter("@Phone", Phone);
             parameters[3] = new SqlParameter("@Email", Email);
-            parameters[4] = new SqlParameter("@Image", Image);
+            parameters[4] = new SqlParameter("@Image", SqlDbType.Image);
+            if (Image == null)
+            {
+                parameters[4].Value = DBNull.Value;
+            }
+            else
+            {
+                parameters[4].Value = Image;
+            }
             DAL.excuteCommand("updateCustomer", parameters);
         }
-        public void deleteCustomer(string Phone)
+        public void deleteCustomer(int ID)
         {
             SqlParameter[] parameters = new SqlParameter[1];
-            parameters[0] = new SqlParameter("@Phone", Phone);
+            parameters[0] = new SqlParameter("@ID", ID);
             DAL.excuteCommand("deleteCustomer", parameters);
         }
     }

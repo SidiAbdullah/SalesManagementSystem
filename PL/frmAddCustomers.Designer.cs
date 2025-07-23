@@ -29,19 +29,10 @@
         private void InitializeComponent()
         {
             this.grbCustomersList = new System.Windows.Forms.GroupBox();
-            this.grbCustomers = new System.Windows.Forms.GroupBox();
-            this.lblFirstName = new System.Windows.Forms.Label();
-            this.txtFirstName = new System.Windows.Forms.TextBox();
-            this.lblLastName = new System.Windows.Forms.Label();
-            this.txtLastName = new System.Windows.Forms.TextBox();
-            this.lblPhone = new System.Windows.Forms.Label();
-            this.txtPhone = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.dgvCustomers = new System.Windows.Forms.DataGridView();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.lblSearchForCustomer = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.dgvCustomers = new System.Windows.Forms.DataGridView();
+            this.grbCustomers = new System.Windows.Forms.GroupBox();
             this.lblPosition = new System.Windows.Forms.Label();
             this.btnLast = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
@@ -53,9 +44,18 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
             this.ptbImage = new System.Windows.Forms.PictureBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.lblPhone = new System.Windows.Forms.Label();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.lblLastName = new System.Windows.Forms.Label();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.lblFirstName = new System.Windows.Forms.Label();
             this.grbCustomersList.SuspendLayout();
-            this.grbCustomers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
+            this.grbCustomers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,6 +70,35 @@
             this.grbCustomersList.TabIndex = 0;
             this.grbCustomersList.TabStop = false;
             this.grbCustomersList.Text = "Cutomers List";
+            // 
+            // lblSearchForCustomer
+            // 
+            this.lblSearchForCustomer.AutoSize = true;
+            this.lblSearchForCustomer.Location = new System.Drawing.Point(29, 28);
+            this.lblSearchForCustomer.Name = "lblSearchForCustomer";
+            this.lblSearchForCustomer.Size = new System.Drawing.Size(169, 20);
+            this.lblSearchForCustomer.TabIndex = 10;
+            this.lblSearchForCustomer.Text = "Search For Customer :";
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(213, 28);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(335, 26);
+            this.txtSearch.TabIndex = 10;
+            // 
+            // dgvCustomers
+            // 
+            this.dgvCustomers.AllowUserToAddRows = false;
+            this.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCustomers.Location = new System.Drawing.Point(3, 65);
+            this.dgvCustomers.Name = "dgvCustomers";
+            this.dgvCustomers.ReadOnly = true;
+            this.dgvCustomers.RowHeadersWidth = 62;
+            this.dgvCustomers.RowTemplate.Height = 28;
+            this.dgvCustomers.Size = new System.Drawing.Size(714, 225);
+            this.dgvCustomers.TabIndex = 0;
+            this.dgvCustomers.DoubleClick += new System.EventHandler(this.dgvCustomers_DoubleClick);
             // 
             // grbCustomers
             // 
@@ -99,105 +128,6 @@
             this.grbCustomers.TabIndex = 1;
             this.grbCustomers.TabStop = false;
             this.grbCustomers.Text = "Customers Infos";
-            // 
-            // lblFirstName
-            // 
-            this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Location = new System.Drawing.Point(25, 47);
-            this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(86, 20);
-            this.lblFirstName.TabIndex = 0;
-            this.lblFirstName.Text = "First Name";
-            // 
-            // txtFirstName
-            // 
-            this.txtFirstName.Location = new System.Drawing.Point(135, 44);
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(211, 26);
-            this.txtFirstName.TabIndex = 1;
-            // 
-            // lblLastName
-            // 
-            this.lblLastName.AutoSize = true;
-            this.lblLastName.Location = new System.Drawing.Point(25, 85);
-            this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(86, 20);
-            this.lblLastName.TabIndex = 2;
-            this.lblLastName.Text = "Last Name";
-            // 
-            // txtLastName
-            // 
-            this.txtLastName.Location = new System.Drawing.Point(135, 83);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(211, 26);
-            this.txtLastName.TabIndex = 3;
-            // 
-            // lblPhone
-            // 
-            this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(25, 123);
-            this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(55, 20);
-            this.lblPhone.TabIndex = 4;
-            this.lblPhone.Text = "Phone";
-            // 
-            // txtPhone
-            // 
-            this.txtPhone.Location = new System.Drawing.Point(135, 123);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(211, 26);
-            this.txtPhone.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(382, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 20);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Click and select image";
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(25, 161);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(48, 20);
-            this.lblEmail.TabIndex = 7;
-            this.lblEmail.Text = "Email";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(135, 161);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(211, 26);
-            this.txtEmail.TabIndex = 8;
-            // 
-            // dgvCustomers
-            // 
-            this.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCustomers.Location = new System.Drawing.Point(3, 65);
-            this.dgvCustomers.Name = "dgvCustomers";
-            this.dgvCustomers.RowHeadersWidth = 62;
-            this.dgvCustomers.RowTemplate.Height = 28;
-            this.dgvCustomers.Size = new System.Drawing.Size(714, 225);
-            this.dgvCustomers.TabIndex = 0;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(213, 28);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(335, 26);
-            this.txtSearch.TabIndex = 10;
-            // 
-            // lblSearchForCustomer
-            // 
-            this.lblSearchForCustomer.AutoSize = true;
-            this.lblSearchForCustomer.Location = new System.Drawing.Point(29, 28);
-            this.lblSearchForCustomer.Name = "lblSearchForCustomer";
-            this.lblSearchForCustomer.Size = new System.Drawing.Size(169, 20);
-            this.lblSearchForCustomer.TabIndex = 10;
-            this.lblSearchForCustomer.Text = "Search For Customer :";
             // 
             // lblPosition
             // 
@@ -307,6 +237,82 @@
             this.ptbImage.TabStop = false;
             this.ptbImage.Click += new System.EventHandler(this.ptbImage_Click);
             // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(135, 161);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(211, 26);
+            this.txtEmail.TabIndex = 8;
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(25, 161);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(48, 20);
+            this.lblEmail.TabIndex = 7;
+            this.lblEmail.Text = "Email";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(382, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(166, 20);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Click and select image";
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Location = new System.Drawing.Point(135, 123);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(211, 26);
+            this.txtPhone.TabIndex = 5;
+            this.txtPhone.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPhone_KeyDown);
+            // 
+            // lblPhone
+            // 
+            this.lblPhone.AutoSize = true;
+            this.lblPhone.Location = new System.Drawing.Point(25, 123);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(55, 20);
+            this.lblPhone.TabIndex = 4;
+            this.lblPhone.Text = "Phone";
+            // 
+            // txtLastName
+            // 
+            this.txtLastName.Location = new System.Drawing.Point(135, 83);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(211, 26);
+            this.txtLastName.TabIndex = 3;
+            this.txtLastName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLastName_KeyDown);
+            // 
+            // lblLastName
+            // 
+            this.lblLastName.AutoSize = true;
+            this.lblLastName.Location = new System.Drawing.Point(25, 85);
+            this.lblLastName.Name = "lblLastName";
+            this.lblLastName.Size = new System.Drawing.Size(86, 20);
+            this.lblLastName.TabIndex = 2;
+            this.lblLastName.Text = "Last Name";
+            // 
+            // txtFirstName
+            // 
+            this.txtFirstName.Location = new System.Drawing.Point(135, 44);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(211, 26);
+            this.txtFirstName.TabIndex = 1;
+            this.txtFirstName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtFirstName_KeyDown);
+            // 
+            // lblFirstName
+            // 
+            this.lblFirstName.AutoSize = true;
+            this.lblFirstName.Location = new System.Drawing.Point(25, 47);
+            this.lblFirstName.Name = "lblFirstName";
+            this.lblFirstName.Size = new System.Drawing.Size(86, 20);
+            this.lblFirstName.TabIndex = 0;
+            this.lblFirstName.Text = "First Name";
+            // 
             // frmAddCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -318,9 +324,9 @@
             this.Text = "frmAddCustomers";
             this.grbCustomersList.ResumeLayout(false);
             this.grbCustomersList.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).EndInit();
             this.grbCustomers.ResumeLayout(false);
             this.grbCustomers.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImage)).EndInit();
             this.ResumeLayout(false);
 

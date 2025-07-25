@@ -1,2 +1,2 @@
 # SalesManagementSystem
-On progress - 60%
+On progress

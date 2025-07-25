@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\SalesManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|d:\\salesmanagementsystem\\pl\\frmaddcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmaddcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|D:\\SalesManagementSystem\\pl\\frmaddcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmaddcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|d:\\salesmanagementsystem\\bl\\clsadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:bl\\clsadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|d:\\salesmanagementsystem\\pl\\frmaddcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmaddcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|D:\\SalesManagementSystem\\pl\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|D:\\SalesManagementSystem\\bl\\clsadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:bl\\clsadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|D:\\SalesManagementSystem\\pl\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|D:\\SalesManagementSystem\\pl\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -38,53 +38,53 @@
               "Title": "clsAdd.cs",
               "DocumentMoniker": "D:\\SalesManagementSystem\\BL\\clsAdd.cs",
               "RelativeDocumentMoniker": "BL\\clsAdd.cs",
-              "ToolTip": "D:\\SalesManagementSystem\\BL\\clsAdd.cs",
-              "RelativeToolTip": "BL\\clsAdd.cs",
-              "ViewState": "AgIAAEoAAAAAzczMzMwMwHcAAABvAAAAAAAAAA==",
+              "ToolTip": "D:\\SalesManagementSystem\\BL\\clsAdd.cs*",
+              "RelativeToolTip": "BL\\clsAdd.cs*",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAUwJsAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-23T13:06:29.516Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "frmAddCustomers.cs",
               "DocumentMoniker": "D:\\SalesManagementSystem\\PL\\frmAddCustomers.cs",
               "RelativeDocumentMoniker": "PL\\frmAddCustomers.cs",
-              "ToolTip": "D:\\SalesManagementSystem\\PL\\frmAddCustomers.cs",
-              "RelativeToolTip": "PL\\frmAddCustomers.cs",
-              "ViewState": "AgIAAEsAAACAZmZmZuY0wGoAAABJAAAAAAAAAA==",
+              "ToolTip": "D:\\SalesManagementSystem\\PL\\frmAddCustomers.cs*",
+              "RelativeToolTip": "PL\\frmAddCustomers.cs*",
+              "ViewState": "AgIAAFsAAACAmZmZmZknwH0AAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-23T05:29:33.516Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "frmAddCustomers.cs [Design]",
               "DocumentMoniker": "D:\\SalesManagementSystem\\PL\\frmAddCustomers.cs",
               "RelativeDocumentMoniker": "PL\\frmAddCustomers.cs",
-              "ToolTip": "D:\\SalesManagementSystem\\PL\\frmAddCustomers.cs [Design]",
-              "RelativeToolTip": "PL\\frmAddCustomers.cs [Design]",
+              "ToolTip": "D:\\SalesManagementSystem\\PL\\frmAddCustomers.cs [Design]*",
+              "RelativeToolTip": "PL\\frmAddCustomers.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-23T04:22:08.147Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "frmMain.cs",
               "DocumentMoniker": "D:\\SalesManagementSystem\\PL\\frmMain.cs",
               "RelativeDocumentMoniker": "PL\\frmMain.cs",
               "ToolTip": "D:\\SalesManagementSystem\\PL\\frmMain.cs",
               "RelativeToolTip": "PL\\frmMain.cs",
-              "ViewState": "AgIAAAcAAAA8MzMzM7M1wDkAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-23T04:20:58.344Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "frmMain.cs [Design]",
               "DocumentMoniker": "D:\\SalesManagementSystem\\PL\\frmMain.cs",
               "RelativeDocumentMoniker": "PL\\frmMain.cs",

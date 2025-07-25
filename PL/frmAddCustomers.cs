@@ -120,6 +120,12 @@ namespace SalesManagementSystem_wf.PL
                 ptbImage.Image = null;
             }
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            this.dgvCustomers.DataSource = customer.searchCustomers(txtSearch.Text);
+        }
+
         // let's make moves buttons
     }
 }

@@ -24,8 +24,16 @@ namespace SalesManagementSystem_wf.BL
             parameters[1] = new SqlParameter("@Description", Description);
             parameters[2] = new SqlParameter("@Stock", Stock);
             parameters[3] = new SqlParameter("@Price", Price);
-            parameters[4] = new SqlParameter("@ProductImage", ProductImage);
-            parameters[5] = new SqlParameter("@CategoryID", CategoryID);
+            parameters[4] = new SqlParameter("@ProductImage", SqlDbType.Image);
+            if (ProductImage != null)
+            {
+                parameters[4].Value = ProductImage;
+            }
+            else
+            {
+                parameters[4].Value = DBNull.Value;
+            }
+                parameters[5] = new SqlParameter("@CategoryID", CategoryID);
             DAL.DataAccessLayer dal = new DAL.DataAccessLayer();
             dal.excuteCommand("addProduct", parameters);
         }
@@ -92,7 +100,7 @@ namespace SalesManagementSystem_wf.BL
             parameters[0] = new SqlParameter("@ID", ID);
             DAL.excuteCommand("deleteCategory", parameters);
         }
-        // let's add customers
+        // let's CRUDS customers
         public DataTable getAllCustomers()
         {
             return DAL.selectData("getAllCustomers", null);
@@ -140,6 +148,12 @@ namespace SalesManagementSystem_wf.BL
             SqlParameter[] parameters = new SqlParameter[1];
             parameters[0] = new SqlParameter("@ID", ID);
             DAL.excuteCommand("deleteCustomer", parameters);
+        }
+        public DataTable searchCustomers(string input)
+        {
+            SqlParameter[] parameter = new SqlParameter[1];
+            parameter[0] = new SqlParameter("@input", input);
+            return DAL.selectData("searchCustomers", parameter);
         }
     }
 }

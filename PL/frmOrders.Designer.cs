@@ -47,18 +47,32 @@
             this.btnSearchCustomers = new System.Windows.Forms.Button();
             this.ptbCustomer = new System.Windows.Forms.PictureBox();
             this.grbProducts = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDeleteProduct = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSaveSell = new System.Windows.Forms.Button();
             this.btnNewSalle = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.grbBillInfos.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCustomer)).BeginInit();
             this.grbProducts.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // grbBillInfos
@@ -233,23 +247,28 @@
             // 
             // grbProducts
             // 
-            this.grbProducts.Controls.Add(this.dataGridView1);
+            this.grbProducts.Controls.Add(this.textBox9);
+            this.grbProducts.Controls.Add(this.label9);
+            this.grbProducts.Controls.Add(this.textBox8);
+            this.grbProducts.Controls.Add(this.label8);
+            this.grbProducts.Controls.Add(this.textBox7);
+            this.grbProducts.Controls.Add(this.label7);
+            this.grbProducts.Controls.Add(this.textBox6);
+            this.grbProducts.Controls.Add(this.label6);
+            this.grbProducts.Controls.Add(this.textBox5);
+            this.grbProducts.Controls.Add(this.label5);
+            this.grbProducts.Controls.Add(this.textBox3);
+            this.grbProducts.Controls.Add(this.label4);
+            this.grbProducts.Controls.Add(this.textBox2);
+            this.grbProducts.Controls.Add(this.label3);
+            this.grbProducts.Controls.Add(this.button1);
+            this.grbProducts.Controls.Add(this.label2);
             this.grbProducts.Location = new System.Drawing.Point(0, 285);
             this.grbProducts.Name = "grbProducts";
             this.grbProducts.Size = new System.Drawing.Size(949, 230);
             this.grbProducts.TabIndex = 2;
             this.grbProducts.TabStop = false;
             this.grbProducts.Text = "Products";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 43);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(949, 187);
-            this.dataGridView1.TabIndex = 0;
             // 
             // textBox4
             // 
@@ -305,10 +324,157 @@
             this.btnNewSalle.UseVisualStyleBackColor = true;
             this.btnNewSalle.Click += new System.EventHandler(this.btnNewSalle_Click);
             // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Gainsboro;
+            this.label2.Location = new System.Drawing.Point(46, 59);
+            this.label2.Name = "label2";
+            this.label2.Padding = new System.Windows.Forms.Padding(3);
+            this.label2.Size = new System.Drawing.Size(83, 30);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Search";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(45, 88);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(85, 26);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Click";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Gainsboro;
+            this.label3.Location = new System.Drawing.Point(131, 58);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(3);
+            this.label3.Size = new System.Drawing.Size(105, 30);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Product ID";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(131, 89);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(105, 26);
+            this.textBox2.TabIndex = 13;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(237, 89);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(170, 26);
+            this.textBox3.TabIndex = 15;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Gainsboro;
+            this.label4.Location = new System.Drawing.Point(237, 58);
+            this.label4.Name = "label4";
+            this.label4.Padding = new System.Windows.Forms.Padding(3);
+            this.label4.Size = new System.Drawing.Size(170, 30);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Product Name";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(408, 89);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(101, 26);
+            this.textBox5.TabIndex = 17;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Gainsboro;
+            this.label5.Location = new System.Drawing.Point(408, 58);
+            this.label5.Name = "label5";
+            this.label5.Padding = new System.Windows.Forms.Padding(3);
+            this.label5.Size = new System.Drawing.Size(101, 30);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Price";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(511, 89);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(101, 26);
+            this.textBox6.TabIndex = 19;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Gainsboro;
+            this.label6.Location = new System.Drawing.Point(511, 58);
+            this.label6.Name = "label6";
+            this.label6.Padding = new System.Windows.Forms.Padding(3);
+            this.label6.Size = new System.Drawing.Size(101, 30);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Quantity";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(614, 89);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(95, 26);
+            this.textBox7.TabIndex = 21;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Gainsboro;
+            this.label7.Location = new System.Drawing.Point(614, 58);
+            this.label7.Name = "label7";
+            this.label7.Padding = new System.Windows.Forms.Padding(3);
+            this.label7.Size = new System.Drawing.Size(95, 30);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Total Price";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(711, 89);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(83, 26);
+            this.textBox8.TabIndex = 23;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Gainsboro;
+            this.label8.Location = new System.Drawing.Point(711, 58);
+            this.label8.Name = "label8";
+            this.label8.Padding = new System.Windows.Forms.Padding(3);
+            this.label8.Size = new System.Drawing.Size(83, 30);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Discount";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(796, 89);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(95, 26);
+            this.textBox9.TabIndex = 25;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Gainsboro;
+            this.label9.Location = new System.Drawing.Point(796, 58);
+            this.label9.Name = "label9";
+            this.label9.Padding = new System.Windows.Forms.Padding(3);
+            this.label9.Size = new System.Drawing.Size(95, 30);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Final Price";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(947, 687);
             this.Controls.Add(this.btnNewSalle);
             this.Controls.Add(this.btnSaveSell);
@@ -327,7 +493,7 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCustomer)).EndInit();
             this.grbProducts.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.grbProducts.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -354,12 +520,27 @@
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.GroupBox grbProducts;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnDeleteProduct;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnSaveSell;
         private System.Windows.Forms.Button btnNewSalle;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label8;
     }
 }

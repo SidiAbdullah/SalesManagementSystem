@@ -1,13 +1,8 @@
 ﻿using SalesManagementSystem_wf.BL;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SalesManagementSystem_wf.PL
@@ -22,7 +17,7 @@ namespace SalesManagementSystem_wf.PL
 
         private void btnNewSalle_Click(object sender, EventArgs e)
         {
-            txtCustomerID.Text = order.getLastID().Rows[0][0].ToString();
+            txtBillNumber.Text = order.getLastID().Rows[0][0].ToString();
             btnSaveSell.Enabled = true;
             btnNewSalle.Enabled = false;
         }

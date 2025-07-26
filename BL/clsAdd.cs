@@ -155,5 +155,10 @@ namespace SalesManagementSystem_wf.BL
             parameter[0] = new SqlParameter("@input", input);
             return DAL.selectData("searchCustomers", parameter);
         }
+        // let's work on Orders
+        public DataTable getLastID()
+        {
+            return DAL.selectData("getLastID", null);
+        }
     }
 }

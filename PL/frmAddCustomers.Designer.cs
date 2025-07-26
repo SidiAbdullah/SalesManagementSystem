@@ -135,9 +135,9 @@
             this.lblPosition.AutoSize = true;
             this.lblPosition.Location = new System.Drawing.Point(174, 200);
             this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(39, 20);
+            this.lblPosition.Size = new System.Drawing.Size(27, 20);
             this.lblPosition.TabIndex = 29;
-            this.lblPosition.Text = "1 / 6";
+            this.lblPosition.Text = "??";
             // 
             // btnLast
             // 
@@ -147,6 +147,7 @@
             this.btnLast.TabIndex = 28;
             this.btnLast.Text = ">>|";
             this.btnLast.UseVisualStyleBackColor = true;
+            this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
             // 
             // btnNext
             // 
@@ -156,6 +157,7 @@
             this.btnNext.TabIndex = 27;
             this.btnNext.Text = ">>";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnPrevious
             // 
@@ -165,6 +167,7 @@
             this.btnPrevious.TabIndex = 26;
             this.btnPrevious.Text = "<<";
             this.btnPrevious.UseVisualStyleBackColor = true;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
             // btnFirst
             // 
@@ -174,6 +177,7 @@
             this.btnFirst.TabIndex = 25;
             this.btnFirst.Text = "|<<";
             this.btnFirst.UseVisualStyleBackColor = true;
+            this.btnFirst.Click += new System.EventHandler(this.btnFirst_Click);
             // 
             // btnExit
             // 

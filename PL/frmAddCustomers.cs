@@ -127,5 +127,60 @@ namespace SalesManagementSystem_wf.PL
         }
 
         // let's make moves buttons
+        private int _position = 0;
+        private int lastIndex = 1;
+        private void moveTo(int index)
+        {
+            DataTable dt = new DataTable();
+            dt = customer.getAllCustomers();
+            lastIndex = dt.Rows.Count - 1;
+            if (index >= 0 && index <= lastIndex)
+            {
+                txtFirstName.Text = dt.Rows[index][1].ToString();
+                txtLastName.Text = dt.Rows[index][2].ToString();
+                txtPhone.Text = dt.Rows[index][3].ToString();
+                txtEmail.Text = dt.Rows[index][4].ToString();
+                if (ptbImage.Image != null)
+                {
+                    byte[] pic = (byte[]) dt.Rows[index][5];
+                    MemoryStream ms = new MemoryStream(pic);
+                    ptbImage.Image = Image.FromStream(ms);
+                }
+            }
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if (_position < lastIndex)
+            {
+                _position++;
+                moveTo(_position);
+                lblPosition.Text = (_position + 1).ToString() + " / " + (lastIndex + 1).ToString();
+            }
+        }
+
+        private void btnPrevious_Click(object sender, EventArgs e)
+        {
+            if (_position > 0)
+            {
+                _position--;
+                moveTo(_position);
+                lblPosition.Text = (_position + 1).ToString() + " / " + (lastIndex + 1).ToString();
+            }
+        }
+
+        private void btnFirst_Click(object sender, EventArgs e)
+        {
+            _position = 0;
+            moveTo(_position);
+            lblPosition.Text = (_position + 1).ToString() + " / " + (lastIndex + 1).ToString();
+        }
+
+        private void btnLast_Click(object sender, EventArgs e)
+        {
+            _position = lastIndex;
+            moveTo(_position);
+            lblPosition.Text = (_position + 1).ToString() + " / " + (lastIndex + 1).ToString();
+        }
     }
 }

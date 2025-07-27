@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\all_my_projects\\SalesManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|c:\\all_my_projects\\salesmanagementsystem\\pl\\frmorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|C:\\all_my_projects\\SalesManagementSystem\\pl\\frmorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|C:\\all_my_projects\\SalesManagementSystem\\pl\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|c:\\all_my_projects\\salesmanagementsystem\\pl\\frmorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|C:\\all_my_projects\\SalesManagementSystem\\pl\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|C:\\all_my_projects\\SalesManagementSystem\\pl\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,29 +26,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "frmOrders.cs",
               "DocumentMoniker": "C:\\all_my_projects\\SalesManagementSystem\\PL\\frmOrders.cs",
               "RelativeDocumentMoniker": "PL\\frmOrders.cs",
-              "ToolTip": "C:\\all_my_projects\\SalesManagementSystem\\PL\\frmOrders.cs",
-              "RelativeToolTip": "PL\\frmOrders.cs",
-              "ViewState": "AgIAABsAAABAMzMzMzMnwCQAAABYAAAAAAAAAA==",
+              "ToolTip": "C:\\all_my_projects\\SalesManagementSystem\\PL\\frmOrders.cs*",
+              "RelativeToolTip": "PL\\frmOrders.cs*",
+              "ViewState": "AgIAAEsAAAA4MzMzMzM9wHYAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-25T18:47:31.14Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "frmOrders.cs [Design]",
               "DocumentMoniker": "C:\\all_my_projects\\SalesManagementSystem\\PL\\frmOrders.cs",
               "RelativeDocumentMoniker": "PL\\frmOrders.cs",
-              "ToolTip": "C:\\all_my_projects\\SalesManagementSystem\\PL\\frmOrders.cs [Design]",
-              "RelativeToolTip": "PL\\frmOrders.cs [Design]",
+              "ToolTip": "C:\\all_my_projects\\SalesManagementSystem\\PL\\frmOrders.cs [Design]*",
+              "RelativeToolTip": "PL\\frmOrders.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-25T17:51:46.449Z",
               "EditorCaption": " [Design]"
@@ -56,6 +56,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "C:\\all_my_projects\\SalesManagementSystem\\PL\\frmMain.cs",
+              "RelativeDocumentMoniker": "PL\\frmMain.cs",
+              "ToolTip": "C:\\all_my_projects\\SalesManagementSystem\\PL\\frmMain.cs [Design]",
+              "RelativeToolTip": "PL\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T03:22:44.533Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "frmMain.cs",
               "DocumentMoniker": "C:\\all_my_projects\\SalesManagementSystem\\PL\\frmMain.cs",
               "RelativeDocumentMoniker": "PL\\frmMain.cs",
@@ -63,18 +75,8 @@
               "RelativeToolTip": "PL\\frmMain.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T04:20:58.344Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmMain.cs [Design]",
-              "DocumentMoniker": "C:\\all_my_projects\\SalesManagementSystem\\PL\\frmMain.cs",
-              "RelativeDocumentMoniker": "PL\\frmMain.cs",
-              "ToolTip": "C:\\all_my_projects\\SalesManagementSystem\\PL\\frmMain.cs [Design]",
-              "RelativeToolTip": "PL\\frmMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T03:22:44.533Z"
+              "WhenOpened": "2025-07-23T04:20:58.344Z",
+              "EditorCaption": ""
             }
           ]
         }

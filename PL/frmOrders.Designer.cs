@@ -47,32 +47,34 @@
             this.btnSearchCustomers = new System.Windows.Forms.Button();
             this.ptbCustomer = new System.Windows.Forms.PictureBox();
             this.grbProducts = new System.Windows.Forms.GroupBox();
+            this.dgvProducts = new System.Windows.Forms.DataGridView();
+            this.txtFinalPrice = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtDiscount = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtTotalPrice = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtPrQuantity = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtPrPrice = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtPrName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtPrID = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnProductsList = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDeleteProduct = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSaveSell = new System.Windows.Forms.Button();
             this.btnNewSalle = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.grbBillInfos.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCustomer)).BeginInit();
             this.grbProducts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.SuspendLayout();
             // 
             // grbBillInfos
@@ -85,7 +87,7 @@
             this.grbBillInfos.Controls.Add(this.txtBillNumber);
             this.grbBillInfos.Location = new System.Drawing.Point(0, 21);
             this.grbBillInfos.Name = "grbBillInfos";
-            this.grbBillInfos.Size = new System.Drawing.Size(421, 223);
+            this.grbBillInfos.Size = new System.Drawing.Size(480, 223);
             this.grbBillInfos.TabIndex = 0;
             this.grbBillInfos.TabStop = false;
             this.grbBillInfos.Text = "Bill Infos";
@@ -94,7 +96,7 @@
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(143, 158);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(272, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(314, 26);
             this.dateTimePicker1.TabIndex = 5;
             // 
             // lblSellDate
@@ -112,7 +114,7 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(272, 57);
+            this.textBox1.Size = new System.Drawing.Size(314, 57);
             this.textBox1.TabIndex = 3;
             // 
             // lblBillDesc
@@ -138,7 +140,7 @@
             this.txtBillNumber.Location = new System.Drawing.Point(143, 36);
             this.txtBillNumber.Name = "txtBillNumber";
             this.txtBillNumber.ReadOnly = true;
-            this.txtBillNumber.Size = new System.Drawing.Size(272, 26);
+            this.txtBillNumber.Size = new System.Drawing.Size(314, 26);
             this.txtBillNumber.TabIndex = 0;
             // 
             // groupBox2
@@ -153,9 +155,9 @@
             this.groupBox2.Controls.Add(this.lblCustomerID);
             this.groupBox2.Controls.Add(this.btnSearchCustomers);
             this.groupBox2.Controls.Add(this.ptbCustomer);
-            this.groupBox2.Location = new System.Drawing.Point(436, 21);
+            this.groupBox2.Location = new System.Drawing.Point(511, 21);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(513, 223);
+            this.groupBox2.Size = new System.Drawing.Size(568, 223);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Customer Infos";
@@ -240,39 +242,218 @@
             this.ptbCustomer.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ptbCustomer.Location = new System.Drawing.Point(364, 10);
             this.ptbCustomer.Name = "ptbCustomer";
-            this.ptbCustomer.Size = new System.Drawing.Size(143, 213);
+            this.ptbCustomer.Size = new System.Drawing.Size(198, 213);
             this.ptbCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbCustomer.TabIndex = 0;
             this.ptbCustomer.TabStop = false;
             // 
             // grbProducts
             // 
-            this.grbProducts.Controls.Add(this.textBox9);
+            this.grbProducts.Controls.Add(this.dgvProducts);
+            this.grbProducts.Controls.Add(this.txtFinalPrice);
             this.grbProducts.Controls.Add(this.label9);
-            this.grbProducts.Controls.Add(this.textBox8);
+            this.grbProducts.Controls.Add(this.txtDiscount);
             this.grbProducts.Controls.Add(this.label8);
-            this.grbProducts.Controls.Add(this.textBox7);
+            this.grbProducts.Controls.Add(this.txtTotalPrice);
             this.grbProducts.Controls.Add(this.label7);
-            this.grbProducts.Controls.Add(this.textBox6);
+            this.grbProducts.Controls.Add(this.txtPrQuantity);
             this.grbProducts.Controls.Add(this.label6);
-            this.grbProducts.Controls.Add(this.textBox5);
+            this.grbProducts.Controls.Add(this.txtPrPrice);
             this.grbProducts.Controls.Add(this.label5);
-            this.grbProducts.Controls.Add(this.textBox3);
+            this.grbProducts.Controls.Add(this.txtPrName);
             this.grbProducts.Controls.Add(this.label4);
-            this.grbProducts.Controls.Add(this.textBox2);
+            this.grbProducts.Controls.Add(this.txtPrID);
             this.grbProducts.Controls.Add(this.label3);
-            this.grbProducts.Controls.Add(this.button1);
+            this.grbProducts.Controls.Add(this.btnProductsList);
             this.grbProducts.Controls.Add(this.label2);
             this.grbProducts.Location = new System.Drawing.Point(0, 285);
             this.grbProducts.Name = "grbProducts";
-            this.grbProducts.Size = new System.Drawing.Size(949, 230);
+            this.grbProducts.Size = new System.Drawing.Size(1079, 243);
             this.grbProducts.TabIndex = 2;
             this.grbProducts.TabStop = false;
             this.grbProducts.Text = "Products";
             // 
+            // dgvProducts
+            // 
+            this.dgvProducts.AllowUserToAddRows = false;
+            this.dgvProducts.AllowUserToDeleteRows = false;
+            this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProducts.Location = new System.Drawing.Point(45, 115);
+            this.dgvProducts.MultiSelect = false;
+            this.dgvProducts.Name = "dgvProducts";
+            this.dgvProducts.ReadOnly = true;
+            this.dgvProducts.RowHeadersWidth = 62;
+            this.dgvProducts.RowTemplate.Height = 28;
+            this.dgvProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvProducts.Size = new System.Drawing.Size(992, 109);
+            this.dgvProducts.TabIndex = 27;
+            // 
+            // txtFinalPrice
+            // 
+            this.txtFinalPrice.Location = new System.Drawing.Point(887, 74);
+            this.txtFinalPrice.Name = "txtFinalPrice";
+            this.txtFinalPrice.ReadOnly = true;
+            this.txtFinalPrice.Size = new System.Drawing.Size(148, 26);
+            this.txtFinalPrice.TabIndex = 25;
+            this.txtFinalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Gainsboro;
+            this.label9.Location = new System.Drawing.Point(887, 42);
+            this.label9.Name = "label9";
+            this.label9.Padding = new System.Windows.Forms.Padding(3);
+            this.label9.Size = new System.Drawing.Size(148, 30);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Final Price";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtDiscount
+            // 
+            this.txtDiscount.Location = new System.Drawing.Point(790, 74);
+            this.txtDiscount.Name = "txtDiscount";
+            this.txtDiscount.Size = new System.Drawing.Size(95, 26);
+            this.txtDiscount.TabIndex = 23;
+            this.txtDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtDiscount.TextChanged += new System.EventHandler(this.txtDiscount_TextChanged);
+            this.txtDiscount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDiscount_KeyPress);
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Gainsboro;
+            this.label8.Location = new System.Drawing.Point(790, 42);
+            this.label8.Name = "label8";
+            this.label8.Padding = new System.Windows.Forms.Padding(3);
+            this.label8.Size = new System.Drawing.Size(95, 30);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Discount";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtTotalPrice
+            // 
+            this.txtTotalPrice.Location = new System.Drawing.Point(693, 74);
+            this.txtTotalPrice.Name = "txtTotalPrice";
+            this.txtTotalPrice.ReadOnly = true;
+            this.txtTotalPrice.Size = new System.Drawing.Size(95, 26);
+            this.txtTotalPrice.TabIndex = 21;
+            this.txtTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Gainsboro;
+            this.label7.Location = new System.Drawing.Point(693, 42);
+            this.label7.Name = "label7";
+            this.label7.Padding = new System.Windows.Forms.Padding(3);
+            this.label7.Size = new System.Drawing.Size(95, 30);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Total Price";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtPrQuantity
+            // 
+            this.txtPrQuantity.Location = new System.Drawing.Point(590, 74);
+            this.txtPrQuantity.Name = "txtPrQuantity";
+            this.txtPrQuantity.Size = new System.Drawing.Size(101, 26);
+            this.txtPrQuantity.TabIndex = 19;
+            this.txtPrQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPrQuantity.TextChanged += new System.EventHandler(this.txtPrQuantity_TextChanged);
+            this.txtPrQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrQuantity_KeyPress);
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Gainsboro;
+            this.label6.Location = new System.Drawing.Point(590, 42);
+            this.label6.Name = "label6";
+            this.label6.Padding = new System.Windows.Forms.Padding(3);
+            this.label6.Size = new System.Drawing.Size(101, 30);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Quantity";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtPrPrice
+            // 
+            this.txtPrPrice.Location = new System.Drawing.Point(487, 74);
+            this.txtPrPrice.Name = "txtPrPrice";
+            this.txtPrPrice.ReadOnly = true;
+            this.txtPrPrice.Size = new System.Drawing.Size(101, 26);
+            this.txtPrPrice.TabIndex = 17;
+            this.txtPrPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Gainsboro;
+            this.label5.Location = new System.Drawing.Point(487, 42);
+            this.label5.Name = "label5";
+            this.label5.Padding = new System.Windows.Forms.Padding(3);
+            this.label5.Size = new System.Drawing.Size(101, 30);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Price";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtPrName
+            // 
+            this.txtPrName.Location = new System.Drawing.Point(238, 74);
+            this.txtPrName.Name = "txtPrName";
+            this.txtPrName.ReadOnly = true;
+            this.txtPrName.Size = new System.Drawing.Size(247, 26);
+            this.txtPrName.TabIndex = 15;
+            this.txtPrName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Gainsboro;
+            this.label4.Location = new System.Drawing.Point(238, 42);
+            this.label4.Name = "label4";
+            this.label4.Padding = new System.Windows.Forms.Padding(3);
+            this.label4.Size = new System.Drawing.Size(247, 30);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Product Name";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtPrID
+            // 
+            this.txtPrID.Location = new System.Drawing.Point(131, 74);
+            this.txtPrID.Name = "txtPrID";
+            this.txtPrID.ReadOnly = true;
+            this.txtPrID.Size = new System.Drawing.Size(105, 26);
+            this.txtPrID.TabIndex = 13;
+            this.txtPrID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Gainsboro;
+            this.label3.Location = new System.Drawing.Point(131, 42);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(3);
+            this.label3.Size = new System.Drawing.Size(105, 30);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Product ID";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnProductsList
+            // 
+            this.btnProductsList.Location = new System.Drawing.Point(45, 71);
+            this.btnProductsList.Name = "btnProductsList";
+            this.btnProductsList.Size = new System.Drawing.Size(85, 32);
+            this.btnProductsList.TabIndex = 13;
+            this.btnProductsList.Text = "Click";
+            this.btnProductsList.UseVisualStyleBackColor = true;
+            this.btnProductsList.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Gainsboro;
+            this.label2.Location = new System.Drawing.Point(46, 42);
+            this.label2.Name = "label2";
+            this.label2.Padding = new System.Windows.Forms.Padding(3);
+            this.label2.Size = new System.Drawing.Size(83, 30);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Search";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(719, 531);
+            this.textBox4.Location = new System.Drawing.Point(809, 534);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(228, 26);
             this.textBox4.TabIndex = 13;
@@ -280,7 +461,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(648, 534);
+            this.label1.Location = new System.Drawing.Point(738, 537);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 20);
             this.label1.TabIndex = 13;
@@ -288,7 +469,7 @@
             // 
             // btnDeleteProduct
             // 
-            this.btnDeleteProduct.Location = new System.Drawing.Point(12, 521);
+            this.btnDeleteProduct.Location = new System.Drawing.Point(45, 529);
             this.btnDeleteProduct.Name = "btnDeleteProduct";
             this.btnDeleteProduct.Size = new System.Drawing.Size(138, 37);
             this.btnDeleteProduct.TabIndex = 13;
@@ -297,17 +478,18 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(593, 620);
+            this.btnExit.Location = new System.Drawing.Point(596, 594);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(94, 37);
             this.btnExit.TabIndex = 14;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSaveSell
             // 
             this.btnSaveSell.Enabled = false;
-            this.btnSaveSell.Location = new System.Drawing.Point(442, 620);
+            this.btnSaveSell.Location = new System.Drawing.Point(458, 594);
             this.btnSaveSell.Name = "btnSaveSell";
             this.btnSaveSell.Size = new System.Drawing.Size(94, 37);
             this.btnSaveSell.TabIndex = 16;
@@ -316,7 +498,7 @@
             // 
             // btnNewSalle
             // 
-            this.btnNewSalle.Location = new System.Drawing.Point(291, 620);
+            this.btnNewSalle.Location = new System.Drawing.Point(320, 594);
             this.btnNewSalle.Name = "btnNewSalle";
             this.btnNewSalle.Size = new System.Drawing.Size(94, 37);
             this.btnNewSalle.TabIndex = 17;
@@ -324,158 +506,12 @@
             this.btnNewSalle.UseVisualStyleBackColor = true;
             this.btnNewSalle.Click += new System.EventHandler(this.btnNewSalle_Click);
             // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(46, 59);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(3);
-            this.label2.Size = new System.Drawing.Size(83, 30);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Search";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(45, 88);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 26);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Click";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(131, 58);
-            this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(3);
-            this.label3.Size = new System.Drawing.Size(105, 30);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Product ID";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(131, 89);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(105, 26);
-            this.textBox2.TabIndex = 13;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(237, 89);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(170, 26);
-            this.textBox3.TabIndex = 15;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(237, 58);
-            this.label4.Name = "label4";
-            this.label4.Padding = new System.Windows.Forms.Padding(3);
-            this.label4.Size = new System.Drawing.Size(170, 30);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Product Name";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(408, 89);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(101, 26);
-            this.textBox5.TabIndex = 17;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.Gainsboro;
-            this.label5.Location = new System.Drawing.Point(408, 58);
-            this.label5.Name = "label5";
-            this.label5.Padding = new System.Windows.Forms.Padding(3);
-            this.label5.Size = new System.Drawing.Size(101, 30);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Price";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(511, 89);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(101, 26);
-            this.textBox6.TabIndex = 19;
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.Gainsboro;
-            this.label6.Location = new System.Drawing.Point(511, 58);
-            this.label6.Name = "label6";
-            this.label6.Padding = new System.Windows.Forms.Padding(3);
-            this.label6.Size = new System.Drawing.Size(101, 30);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Quantity";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(614, 89);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(95, 26);
-            this.textBox7.TabIndex = 21;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.Gainsboro;
-            this.label7.Location = new System.Drawing.Point(614, 58);
-            this.label7.Name = "label7";
-            this.label7.Padding = new System.Windows.Forms.Padding(3);
-            this.label7.Size = new System.Drawing.Size(95, 30);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "Total Price";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(711, 89);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(83, 26);
-            this.textBox8.TabIndex = 23;
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.Gainsboro;
-            this.label8.Location = new System.Drawing.Point(711, 58);
-            this.label8.Name = "label8";
-            this.label8.Padding = new System.Windows.Forms.Padding(3);
-            this.label8.Size = new System.Drawing.Size(83, 30);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "Discount";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(796, 89);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(95, 26);
-            this.textBox9.TabIndex = 25;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.Gainsboro;
-            this.label9.Location = new System.Drawing.Point(796, 58);
-            this.label9.Name = "label9";
-            this.label9.Padding = new System.Windows.Forms.Padding(3);
-            this.label9.Size = new System.Drawing.Size(95, 30);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "Final Price";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // frmOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(947, 687);
+            this.ClientSize = new System.Drawing.Size(1083, 687);
             this.Controls.Add(this.btnNewSalle);
             this.Controls.Add(this.btnSaveSell);
             this.Controls.Add(this.btnExit);
@@ -494,6 +530,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptbCustomer)).EndInit();
             this.grbProducts.ResumeLayout(false);
             this.grbProducts.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -526,21 +563,22 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnSaveSell;
         private System.Windows.Forms.Button btnNewSalle;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnProductsList;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtPrID;
+        private System.Windows.Forms.TextBox txtPrPrice;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPrName;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtPrQuantity;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtTotalPrice;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtFinalPrice;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtDiscount;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView dgvProducts;
     }
 }

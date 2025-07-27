@@ -94,9 +94,23 @@ namespace SalesManagementSystem_wf.PL
                 txtTotalPrice.Text = "";
             }
         }
+        private void txtPrQuantity_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8)
+            {
+                e.Handled = true;
+            }
+        }
+        private void txtPrQuantity_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtDiscount.Focus();
+            }
+        }
         private void txtDiscount_TextChanged(object sender, EventArgs e)
         {
-            if (txtDiscount.Text != "" && txtTotalPrice.Text != "")
+            if (txtTotalPrice.Text != "" && txtDiscount.Text != "" && int.Parse(txtDiscount.Text) <= 100 )
             {
                 int totalPrice = int.Parse(txtTotalPrice.Text);
                 int discount = int.Parse(txtDiscount.Text);
@@ -107,19 +121,82 @@ namespace SalesManagementSystem_wf.PL
                 txtFinalPrice.Text = "";
             }
         }
-        private void txtPrQuantity_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8)
-            {
-                e.Handled = true;
-            }
-        }
         private void txtDiscount_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8)
             {
                 e.Handled = true;
             }
+        }
+        private void reset_pr_txtBoxes()
+        {
+            txtPrID.Text = "";
+            txtPrName.Text = "";
+            txtPrPrice.Text = "";
+            txtPrQuantity.Text = "";
+            txtTotalPrice.Text = "";
+            txtDiscount.Text = "";
+            txtFinalPrice.Text = "";
+        }
+        private void SumOfFinalPrices()
+        {
+            int pricesSum = 0;
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                int FinalPrice = Convert.ToInt32(dt.Rows[i][6]);
+                pricesSum += FinalPrice;
+            }
+            txtPricesSum.Text = pricesSum.ToString();
+        }
+        private void txtDiscount_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (txtDiscount.Text != "" && e.KeyCode == Keys.Enter)
+            {
+                for (int i = 0; i < dgvProducts.Rows.Count; i++)
+                {
+                    if (txtPrID.Text == this.dgvProducts.Rows[i].Cells[0].Value.ToString())
+                    {
+                        MessageBox.Show("This Product is already there");
+                        reset_pr_txtBoxes();
+                        return;
+                    }
+                }
+                dt.Rows.Add(txtPrID.Text, txtPrName.Text, txtPrPrice.Text, txtPrQuantity.Text, txtTotalPrice.Text, txtDiscount.Text, txtFinalPrice.Text);
+                reset_pr_txtBoxes();
+                dgvProducts.DataSource = dt;
+
+                SumOfFinalPrices();
+            }
+        }
+
+        private void dgvProducts_DoubleClick(object sender, EventArgs e)
+        {
+            txtPrID.Text = this.dgvProducts.CurrentRow.Cells[0].Value.ToString();
+            txtPrName.Text = this.dgvProducts.CurrentRow.Cells[1].Value.ToString();
+            txtPrPrice.Text = this.dgvProducts.CurrentRow.Cells[2].Value.ToString();
+            txtPrQuantity.Text = this.dgvProducts.CurrentRow.Cells[3].Value.ToString();
+            txtTotalPrice.Text = this.dgvProducts.CurrentRow.Cells[4].Value.ToString();
+            txtDiscount.Text = this.dgvProducts.CurrentRow.Cells[5].Value.ToString();
+            txtFinalPrice.Text = this.dgvProducts.CurrentRow.Cells[6].Value.ToString();
+            this.dgvProducts.Rows.RemoveAt(this.dgvProducts.CurrentRow.Index);
+            txtDiscount.Focus();
+            SumOfFinalPrices();
+        }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dgvProducts_DoubleClick(sender, e);
+        }
+
+        private void deleteCurrentRowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.dgvProducts.Rows.RemoveAt(this.dgvProducts.CurrentRow.Index);
+        }
+
+        private void deleteAllRowsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dt.Clear();
+            this.dgvProducts.Refresh();
         }
     }
 }

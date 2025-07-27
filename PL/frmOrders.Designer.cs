@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.grbBillInfos = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.lblSellDate = new System.Windows.Forms.Label();
@@ -64,17 +65,23 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnProductsList = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtPricesSum = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDeleteProduct = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSaveSell = new System.Windows.Forms.Button();
             this.btnNewSalle = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.deleteCurrentRowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteAllRowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grbBillInfos.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCustomer)).BeginInit();
             this.grbProducts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbBillInfos
@@ -268,7 +275,7 @@
             this.grbProducts.Controls.Add(this.label2);
             this.grbProducts.Location = new System.Drawing.Point(0, 285);
             this.grbProducts.Name = "grbProducts";
-            this.grbProducts.Size = new System.Drawing.Size(1079, 243);
+            this.grbProducts.Size = new System.Drawing.Size(1079, 259);
             this.grbProducts.TabIndex = 2;
             this.grbProducts.TabStop = false;
             this.grbProducts.Text = "Products";
@@ -278,15 +285,17 @@
             this.dgvProducts.AllowUserToAddRows = false;
             this.dgvProducts.AllowUserToDeleteRows = false;
             this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProducts.Location = new System.Drawing.Point(45, 115);
+            this.dgvProducts.ContextMenuStrip = this.contextMenuStrip1;
+            this.dgvProducts.Location = new System.Drawing.Point(45, 108);
             this.dgvProducts.MultiSelect = false;
             this.dgvProducts.Name = "dgvProducts";
             this.dgvProducts.ReadOnly = true;
             this.dgvProducts.RowHeadersWidth = 62;
             this.dgvProducts.RowTemplate.Height = 28;
             this.dgvProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProducts.Size = new System.Drawing.Size(992, 109);
+            this.dgvProducts.Size = new System.Drawing.Size(992, 145);
             this.dgvProducts.TabIndex = 27;
+            this.dgvProducts.DoubleClick += new System.EventHandler(this.dgvProducts_DoubleClick);
             // 
             // txtFinalPrice
             // 
@@ -316,6 +325,7 @@
             this.txtDiscount.TabIndex = 23;
             this.txtDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtDiscount.TextChanged += new System.EventHandler(this.txtDiscount_TextChanged);
+            this.txtDiscount.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDiscount_KeyDown);
             this.txtDiscount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDiscount_KeyPress);
             // 
             // label8
@@ -357,6 +367,7 @@
             this.txtPrQuantity.TabIndex = 19;
             this.txtPrQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPrQuantity.TextChanged += new System.EventHandler(this.txtPrQuantity_TextChanged);
+            this.txtPrQuantity.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPrQuantity_KeyDown);
             this.txtPrQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrQuantity_KeyPress);
             // 
             // label6
@@ -451,17 +462,17 @@
             this.label2.Text = "Search";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox4
+            // txtPricesSum
             // 
-            this.textBox4.Location = new System.Drawing.Point(809, 534);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(228, 26);
-            this.textBox4.TabIndex = 13;
+            this.txtPricesSum.Location = new System.Drawing.Point(869, 561);
+            this.txtPricesSum.Name = "txtPricesSum";
+            this.txtPricesSum.Size = new System.Drawing.Size(168, 26);
+            this.txtPricesSum.TabIndex = 13;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(738, 537);
+            this.label1.Location = new System.Drawing.Point(800, 561);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 20);
             this.label1.TabIndex = 13;
@@ -469,7 +480,7 @@
             // 
             // btnDeleteProduct
             // 
-            this.btnDeleteProduct.Location = new System.Drawing.Point(45, 529);
+            this.btnDeleteProduct.Location = new System.Drawing.Point(45, 550);
             this.btnDeleteProduct.Name = "btnDeleteProduct";
             this.btnDeleteProduct.Size = new System.Drawing.Size(138, 37);
             this.btnDeleteProduct.TabIndex = 13;
@@ -478,7 +489,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(596, 594);
+            this.btnExit.Location = new System.Drawing.Point(625, 619);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(94, 37);
             this.btnExit.TabIndex = 14;
@@ -489,7 +500,7 @@
             // btnSaveSell
             // 
             this.btnSaveSell.Enabled = false;
-            this.btnSaveSell.Location = new System.Drawing.Point(458, 594);
+            this.btnSaveSell.Location = new System.Drawing.Point(487, 619);
             this.btnSaveSell.Name = "btnSaveSell";
             this.btnSaveSell.Size = new System.Drawing.Size(94, 37);
             this.btnSaveSell.TabIndex = 16;
@@ -498,13 +509,50 @@
             // 
             // btnNewSalle
             // 
-            this.btnNewSalle.Location = new System.Drawing.Point(320, 594);
+            this.btnNewSalle.Location = new System.Drawing.Point(349, 619);
             this.btnNewSalle.Name = "btnNewSalle";
             this.btnNewSalle.Size = new System.Drawing.Size(94, 37);
             this.btnNewSalle.TabIndex = 17;
             this.btnNewSalle.Text = "New Sale";
             this.btnNewSalle.UseVisualStyleBackColor = true;
             this.btnNewSalle.Click += new System.EventHandler(this.btnNewSalle_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.deleteCurrentRowToolStripMenuItem,
+            this.deleteAllRowsToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(241, 139);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.editToolStripMenuItem.Text = "Edit";
+            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(237, 6);
+            // 
+            // deleteCurrentRowToolStripMenuItem
+            // 
+            this.deleteCurrentRowToolStripMenuItem.Name = "deleteCurrentRowToolStripMenuItem";
+            this.deleteCurrentRowToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.deleteCurrentRowToolStripMenuItem.Text = "Delete Current Row";
+            this.deleteCurrentRowToolStripMenuItem.Click += new System.EventHandler(this.deleteCurrentRowToolStripMenuItem_Click);
+            // 
+            // deleteAllRowsToolStripMenuItem
+            // 
+            this.deleteAllRowsToolStripMenuItem.Name = "deleteAllRowsToolStripMenuItem";
+            this.deleteAllRowsToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.deleteAllRowsToolStripMenuItem.Text = "Delete All Rows";
+            this.deleteAllRowsToolStripMenuItem.Click += new System.EventHandler(this.deleteAllRowsToolStripMenuItem_Click);
             // 
             // frmOrders
             // 
@@ -517,7 +565,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnDeleteProduct);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtPricesSum);
             this.Controls.Add(this.grbProducts);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.grbBillInfos);
@@ -531,6 +579,7 @@
             this.grbProducts.ResumeLayout(false);
             this.grbProducts.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -557,7 +606,7 @@
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.GroupBox grbProducts;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtPricesSum;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnDeleteProduct;
         private System.Windows.Forms.Button btnExit;
@@ -580,5 +629,10 @@
         private System.Windows.Forms.TextBox txtDiscount;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView dgvProducts;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem deleteCurrentRowToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteAllRowsToolStripMenuItem;
     }
 }

@@ -74,7 +74,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtPricesSum = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnDeleteProduct = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSaveSell = new System.Windows.Forms.Button();
             this.btnNewSalle = new System.Windows.Forms.Button();
@@ -296,7 +295,7 @@
             this.grbProducts.Controls.Add(this.label2);
             this.grbProducts.Location = new System.Drawing.Point(0, 285);
             this.grbProducts.Name = "grbProducts";
-            this.grbProducts.Size = new System.Drawing.Size(1079, 259);
+            this.grbProducts.Size = new System.Drawing.Size(1079, 270);
             this.grbProducts.TabIndex = 2;
             this.grbProducts.TabStop = false;
             this.grbProducts.Text = "Products";
@@ -522,7 +521,7 @@
             // 
             // txtPricesSum
             // 
-            this.txtPricesSum.Location = new System.Drawing.Point(869, 561);
+            this.txtPricesSum.Location = new System.Drawing.Point(869, 581);
             this.txtPricesSum.Name = "txtPricesSum";
             this.txtPricesSum.Size = new System.Drawing.Size(168, 26);
             this.txtPricesSum.TabIndex = 13;
@@ -530,24 +529,15 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(800, 561);
+            this.label1.Location = new System.Drawing.Point(800, 581);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 20);
             this.label1.TabIndex = 13;
             this.label1.Text = "Sum :";
             // 
-            // btnDeleteProduct
-            // 
-            this.btnDeleteProduct.Location = new System.Drawing.Point(45, 550);
-            this.btnDeleteProduct.Name = "btnDeleteProduct";
-            this.btnDeleteProduct.Size = new System.Drawing.Size(138, 37);
-            this.btnDeleteProduct.TabIndex = 13;
-            this.btnDeleteProduct.Text = "Delete Product";
-            this.btnDeleteProduct.UseVisualStyleBackColor = true;
-            // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(625, 619);
+            this.btnExit.Location = new System.Drawing.Point(318, 581);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(94, 37);
             this.btnExit.TabIndex = 14;
@@ -558,7 +548,7 @@
             // btnSaveSell
             // 
             this.btnSaveSell.Enabled = false;
-            this.btnSaveSell.Location = new System.Drawing.Point(487, 619);
+            this.btnSaveSell.Location = new System.Drawing.Point(180, 581);
             this.btnSaveSell.Name = "btnSaveSell";
             this.btnSaveSell.Size = new System.Drawing.Size(94, 37);
             this.btnSaveSell.TabIndex = 16;
@@ -568,7 +558,7 @@
             // 
             // btnNewSalle
             // 
-            this.btnNewSalle.Location = new System.Drawing.Point(349, 619);
+            this.btnNewSalle.Location = new System.Drawing.Point(42, 581);
             this.btnNewSalle.Name = "btnNewSalle";
             this.btnNewSalle.Size = new System.Drawing.Size(94, 37);
             this.btnNewSalle.TabIndex = 17;
@@ -585,7 +575,6 @@
             this.Controls.Add(this.btnNewSalle);
             this.Controls.Add(this.btnSaveSell);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnDeleteProduct);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPricesSum);
             this.Controls.Add(this.grbProducts);
@@ -630,7 +619,6 @@
         private System.Windows.Forms.GroupBox grbProducts;
         private System.Windows.Forms.TextBox txtPricesSum;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnDeleteProduct;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnSaveSell;
         private System.Windows.Forms.Button btnNewSalle;

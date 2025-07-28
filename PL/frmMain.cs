@@ -65,5 +65,23 @@ namespace SalesManagementSystem_wf.PL
             frmOrders orders = new frmOrders();
             orders.ShowDialog();
         }
+
+        private void addNewUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddUser addUser = new frmAddUser();
+            addUser.ShowDialog();
+        }
+
+        private void manageUsersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMenageUsers menageUsers = new frmMenageUsers();
+            menageUsers.ShowDialog();
+        }
+
+        private void ftsm_createBackup_Click(object sender, EventArgs e)
+        {
+            frmBackUpDB backUpDB = new frmBackUpDB();
+            backUpDB.ShowDialog();
+        }
     }
 }

@@ -59,7 +59,7 @@
             this.tsmUsers});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(903, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(903, 36);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -71,7 +71,7 @@
             this.ftsm_restoreBackup,
             this.logputToolStripMenuItem});
             this.tsmFile.Name = "tsmFile";
-            this.tsmFile.Size = new System.Drawing.Size(54, 29);
+            this.tsmFile.Size = new System.Drawing.Size(54, 30);
             this.tsmFile.Text = "File";
             // 
             // loginToolStripMenuItem
@@ -85,8 +85,9 @@
             // 
             this.ftsm_createBackup.Enabled = false;
             this.ftsm_createBackup.Name = "ftsm_createBackup";
-            this.ftsm_createBackup.Size = new System.Drawing.Size(236, 34);
+            this.ftsm_createBackup.Size = new System.Drawing.Size(270, 34);
             this.ftsm_createBackup.Text = "Create backup";
+            this.ftsm_createBackup.Click += new System.EventHandler(this.ftsm_createBackup_Click);
             // 
             // ftsm_restoreBackup
             // 
@@ -149,19 +150,19 @@
             // manageCustomersToolStripMenuItem
             // 
             this.manageCustomersToolStripMenuItem.Name = "manageCustomersToolStripMenuItem";
-            this.manageCustomersToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.manageCustomersToolStripMenuItem.Size = new System.Drawing.Size(268, 34);
             this.manageCustomersToolStripMenuItem.Text = "Manage Customers";
             this.manageCustomersToolStripMenuItem.Click += new System.EventHandler(this.manageCustomersToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(267, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(265, 6);
             // 
             // manageSalesToolStripMenuItem
             // 
             this.manageSalesToolStripMenuItem.Name = "manageSalesToolStripMenuItem";
-            this.manageSalesToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.manageSalesToolStripMenuItem.Size = new System.Drawing.Size(268, 34);
             this.manageSalesToolStripMenuItem.Text = "Manage Sales";
             this.manageSalesToolStripMenuItem.Click += new System.EventHandler(this.manageSalesToolStripMenuItem_Click);
             // 
@@ -172,20 +173,22 @@
             this.manageUsersToolStripMenuItem});
             this.tsmUsers.Enabled = false;
             this.tsmUsers.Name = "tsmUsers";
-            this.tsmUsers.Size = new System.Drawing.Size(71, 29);
+            this.tsmUsers.Size = new System.Drawing.Size(71, 30);
             this.tsmUsers.Text = "Users";
             // 
             // addNewUserToolStripMenuItem
             // 
             this.addNewUserToolStripMenuItem.Name = "addNewUserToolStripMenuItem";
-            this.addNewUserToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.addNewUserToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.addNewUserToolStripMenuItem.Text = "Add new user";
+            this.addNewUserToolStripMenuItem.Click += new System.EventHandler(this.addNewUserToolStripMenuItem_Click);
             // 
             // manageUsersToolStripMenuItem
             // 
             this.manageUsersToolStripMenuItem.Name = "manageUsersToolStripMenuItem";
-            this.manageUsersToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.manageUsersToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.manageUsersToolStripMenuItem.Text = "Manage users";
+            this.manageUsersToolStripMenuItem.Click += new System.EventHandler(this.manageUsersToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -221,8 +224,8 @@
         private System.Windows.Forms.ToolStripMenuItem manageCustomersToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem manageSalesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tsmUsers;
         private System.Windows.Forms.ToolStripMenuItem addNewUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manageUsersToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem tsmUsers;
     }
 }

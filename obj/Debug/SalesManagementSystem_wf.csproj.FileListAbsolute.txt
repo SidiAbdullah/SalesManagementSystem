@@ -61,3 +61,6 @@ C:\all_my_projects\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.pdb
 C:\all_my_projects\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.PL.frmOrders.resources
 C:\all_my_projects\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.PL.frmCustomersList.resources
 C:\all_my_projects\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.PL.frmProductsList.resources
+C:\all_my_projects\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.PL.frmAddUser.resources
+C:\all_my_projects\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.PL.frmMenageUsers.resources
+C:\all_my_projects\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.PL.frmBackUpDB.resources

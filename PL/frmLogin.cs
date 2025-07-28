@@ -23,13 +23,26 @@ namespace SalesManagementSystem_wf.PL
             DataTable dt = login.login(txtUserName.Text, txtPassword.Text);
             if (dt.Rows.Count > 0)
             {
-                MessageBox.Show("You logged in succesfully!");
+                MessageBox.Show("You logged in succesfully!", "Log In", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 _frmMain.enabeld_tsms();
+                // see frmOrders
+                Program.sellerName = dt.Rows[0][0].ToString();
+                // see frmAddUser
+                string UserType = dt.Rows[0][2].ToString();
+                if (UserType == "Admin" || UserType == "admin")
+                {
+                    _frmMain.tsmUsers.Visible = true;
+                }
+                else if (UserType == "Normal User" || UserType == "normal user" || UserType == "Normal user")
+                {
+                    _frmMain.tsmUsers.Visible = false;
+                }
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Login in failed!");
+                Program.sellerName = "";
+                MessageBox.Show("Log in failed!", "Log In", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -38,6 +51,14 @@ namespace SalesManagementSystem_wf.PL
             if (e.KeyCode == Keys.Enter)
             {
                 txtPassword.Focus();
+            }
+        }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnEnter_Click(sender, e);
             }
         }
     }

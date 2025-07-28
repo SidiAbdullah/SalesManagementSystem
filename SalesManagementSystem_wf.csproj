@@ -61,6 +61,18 @@
     <Compile Include="PL\frmAddProduct.Designer.cs">
       <DependentUpon>frmAddProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmBackUpDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmBackUpDB.Designer.cs">
+      <DependentUpon>frmBackUpDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frmCustomersList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +103,12 @@
     <Compile Include="PL\frmMenageProducts.Designer.cs">
       <DependentUpon>frmMenageProducts.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\frmMenageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmMenageUsers.Designer.cs">
+      <DependentUpon>frmMenageUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frmOrders.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +135,12 @@
     <EmbeddedResource Include="PL\frmAddProduct.resx">
       <DependentUpon>frmAddProduct.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmBackUpDB.resx">
+      <DependentUpon>frmBackUpDB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\frmCustomersList.resx">
       <DependentUpon>frmCustomersList.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frmMenageProducts.resx">
       <DependentUpon>frmMenageProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmMenageUsers.resx">
+      <DependentUpon>frmMenageUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frmOrders.resx">
       <DependentUpon>frmOrders.cs</DependentUpon>

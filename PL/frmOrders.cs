@@ -207,6 +207,9 @@ namespace SalesManagementSystem_wf.PL
             btnNewSalle.Enabled = true;
             btnSaveSell.Enabled = false;
 
+            // still have to do the validation on the stock to enter a one bigger than the exiting one
+            // and to update it and clear all boxes and dt after saving
+
             int OrderID = Convert.ToInt32(txtOrderID.Text);
             add.addOrder(OrderID, tdpOrderDate.Value, int.Parse(txtCustomerID.Text), txtOrderDesc.Text, txtSellerName.Text);
 

@@ -5,12 +5,10 @@ playlist : 63 videos (16h50) from : https://www.youtube.com/playlist?list=PLwj1Y
 - progress:
 7 / 6 & 7 & 8 & 9 & 12 & 15 & 20 / 2025 -- (1h26) & (42m) & (24m) & (26m) & (44m) & (30m) & (13m),
 7 / 21 & 22 & 23 & 24 & 25 & 26 & 27 / 2025 -- (2h9) & (10m) & (2h1) & (17m) & (1h) & (1h12) & (1h),
-7 / 28 / 2025 --  (34m + 4h12?) : ✅❌ x days
-53 / 63 (12h38) ✅
+7 / 28 / 2025 --  (1h48 + 2h58?) : ✅❌ x days
+56 / 63 (13h52) ✅
 
 - notes {
-	- how to make changes on a Form from another Form, without making new Object?
-	- how to transfer picture <=> byteArray?
 	- how to print product using rpt?
 	- we want to understand how DataBindings, BindingManagerBase works not only what they do..
 }

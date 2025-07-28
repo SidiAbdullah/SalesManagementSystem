@@ -32,5 +32,13 @@ namespace SalesManagementSystem_wf.PL
                 MessageBox.Show("Login in failed!");
             }
         }
+
+        private void txtUserName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtPassword.Focus();
+            }
+        }
     }
 }

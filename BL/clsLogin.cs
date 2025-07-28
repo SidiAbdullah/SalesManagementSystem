@@ -15,7 +15,15 @@ namespace SalesManagementSystem_wf.BL
             parameters[0] = new SqlParameter("@UserName", UserName);
             parameters[1] = new SqlParameter("@Password", Password);
             dt = DAL.selectData("sp_login", parameters);
-            return dt;
+            if (dt.Rows.Count > 0)
+            {
+                Program.sellerName = dt.Rows[0][0].ToString();
+            }
+            else
+            {
+                Program.sellerName = "";
+            }
+                return dt;
         }
     }
 }

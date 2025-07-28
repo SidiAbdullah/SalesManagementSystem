@@ -39,12 +39,14 @@ namespace SalesManagementSystem_wf.PL
             InitializeComponent();
             add_dgv_columns();
             resize_dgv();
+            txtSellerName.Text = Program.sellerName;
         }
 
         clsAdd add = new clsAdd();
         private void btnNewSalle_Click(object sender, EventArgs e)
         {
-            txtBillNumber.Text = add.getLastID().Rows[0][0].ToString();
+            txtOrderID.Text = add.getLastID().Rows[0][0].ToString();
+            //reset_txtBoxes();
             btnSaveSell.Enabled = true;
             btnNewSalle.Enabled = false;
         }
@@ -197,6 +199,29 @@ namespace SalesManagementSystem_wf.PL
         {
             dt.Clear();
             this.dgvProducts.Refresh();
+        }
+
+        // let's go to add button to add orders to orders table in DB
+        private void btnSaveSell_Click(object sender, EventArgs e)
+        {
+            btnNewSalle.Enabled = true;
+            btnSaveSell.Enabled = false;
+
+            int OrderID = Convert.ToInt32(txtOrderID.Text);
+            add.addOrder(OrderID, tdpOrderDate.Value, int.Parse(txtCustomerID.Text), txtOrderDesc.Text, txtSellerName.Text);
+
+            for (int i = 0; i < dgvProducts.Rows.Count; i++)
+            {
+                add.addOrderDetails(Convert.ToInt32(dgvProducts.Rows[i].Cells[0].Value),
+                                    OrderID,
+                                    Convert.ToInt32(dgvProducts.Rows[i].Cells[2].Value),
+                                    Convert.ToInt32(dgvProducts.Rows[i].Cells[3].Value),
+                                    Convert.ToInt32(dgvProducts.Rows[i].Cells[4].Value),
+                                    Convert.ToDouble(dgvProducts.Rows[i].Cells[5].Value),
+                                    Convert.ToDouble(dgvProducts.Rows[i].Cells[6].Value));
+            }
+
+            MessageBox.Show("Order added successfully", "Adding Order", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

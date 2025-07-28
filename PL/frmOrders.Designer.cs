@@ -30,12 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.grbBillInfos = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtSellerName = new System.Windows.Forms.TextBox();
+            this.tdpOrderDate = new System.Windows.Forms.DateTimePicker();
             this.lblSellDate = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtOrderDesc = new System.Windows.Forms.TextBox();
             this.lblBillDesc = new System.Windows.Forms.Label();
             this.lblBill = new System.Windows.Forms.Label();
-            this.txtBillNumber = new System.Windows.Forms.TextBox();
+            this.txtOrderID = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -49,6 +51,11 @@
             this.ptbCustomer = new System.Windows.Forms.PictureBox();
             this.grbProducts = new System.Windows.Forms.GroupBox();
             this.dgvProducts = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.deleteCurrentRowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteAllRowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtFinalPrice = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtDiscount = new System.Windows.Forms.TextBox();
@@ -71,11 +78,6 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSaveSell = new System.Windows.Forms.Button();
             this.btnNewSalle = new System.Windows.Forms.Button();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.deleteCurrentRowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteAllRowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grbBillInfos.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCustomer)).BeginInit();
@@ -86,69 +88,88 @@
             // 
             // grbBillInfos
             // 
-            this.grbBillInfos.Controls.Add(this.dateTimePicker1);
+            this.grbBillInfos.Controls.Add(this.label10);
+            this.grbBillInfos.Controls.Add(this.txtSellerName);
+            this.grbBillInfos.Controls.Add(this.tdpOrderDate);
             this.grbBillInfos.Controls.Add(this.lblSellDate);
-            this.grbBillInfos.Controls.Add(this.textBox1);
+            this.grbBillInfos.Controls.Add(this.txtOrderDesc);
             this.grbBillInfos.Controls.Add(this.lblBillDesc);
             this.grbBillInfos.Controls.Add(this.lblBill);
-            this.grbBillInfos.Controls.Add(this.txtBillNumber);
+            this.grbBillInfos.Controls.Add(this.txtOrderID);
             this.grbBillInfos.Location = new System.Drawing.Point(0, 21);
             this.grbBillInfos.Name = "grbBillInfos";
-            this.grbBillInfos.Size = new System.Drawing.Size(480, 223);
+            this.grbBillInfos.Size = new System.Drawing.Size(480, 246);
             this.grbBillInfos.TabIndex = 0;
             this.grbBillInfos.TabStop = false;
             this.grbBillInfos.Text = "Bill Infos";
             // 
-            // dateTimePicker1
+            // label10
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(143, 158);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(314, 26);
-            this.dateTimePicker1.TabIndex = 5;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(17, 204);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(103, 20);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "Seller Name :";
+            // 
+            // txtSellerName
+            // 
+            this.txtSellerName.Location = new System.Drawing.Point(160, 201);
+            this.txtSellerName.Name = "txtSellerName";
+            this.txtSellerName.ReadOnly = true;
+            this.txtSellerName.Size = new System.Drawing.Size(314, 26);
+            this.txtSellerName.TabIndex = 6;
+            // 
+            // tdpOrderDate
+            // 
+            this.tdpOrderDate.Location = new System.Drawing.Point(160, 157);
+            this.tdpOrderDate.Name = "tdpOrderDate";
+            this.tdpOrderDate.Size = new System.Drawing.Size(314, 26);
+            this.tdpOrderDate.TabIndex = 5;
             // 
             // lblSellDate
             // 
             this.lblSellDate.AutoSize = true;
-            this.lblSellDate.Location = new System.Drawing.Point(12, 158);
+            this.lblSellDate.Location = new System.Drawing.Point(15, 162);
             this.lblSellDate.Name = "lblSellDate";
             this.lblSellDate.Size = new System.Drawing.Size(82, 20);
             this.lblSellDate.TabIndex = 4;
             this.lblSellDate.Text = "Sell Date :";
             // 
-            // textBox1
+            // txtOrderDesc
             // 
-            this.textBox1.Location = new System.Drawing.Point(143, 87);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(314, 57);
-            this.textBox1.TabIndex = 3;
+            this.txtOrderDesc.Location = new System.Drawing.Point(160, 87);
+            this.txtOrderDesc.Multiline = true;
+            this.txtOrderDesc.Name = "txtOrderDesc";
+            this.txtOrderDesc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtOrderDesc.Size = new System.Drawing.Size(314, 57);
+            this.txtOrderDesc.TabIndex = 3;
             // 
             // lblBillDesc
             // 
             this.lblBillDesc.AutoSize = true;
-            this.lblBillDesc.Location = new System.Drawing.Point(12, 93);
+            this.lblBillDesc.Location = new System.Drawing.Point(12, 100);
             this.lblBillDesc.Name = "lblBillDesc";
-            this.lblBillDesc.Size = new System.Drawing.Size(121, 20);
+            this.lblBillDesc.Size = new System.Drawing.Size(141, 20);
             this.lblBillDesc.TabIndex = 2;
-            this.lblBillDesc.Text = "Bill Description :";
+            this.lblBillDesc.Text = "Order Description :";
             // 
             // lblBill
             // 
             this.lblBill.AutoSize = true;
-            this.lblBill.Location = new System.Drawing.Point(12, 42);
+            this.lblBill.Location = new System.Drawing.Point(17, 37);
             this.lblBill.Name = "lblBill";
-            this.lblBill.Size = new System.Drawing.Size(97, 20);
+            this.lblBill.Size = new System.Drawing.Size(78, 20);
             this.lblBill.TabIndex = 1;
-            this.lblBill.Text = "Bill Number :";
+            this.lblBill.Text = "Order ID :";
             // 
-            // txtBillNumber
+            // txtOrderID
             // 
-            this.txtBillNumber.Location = new System.Drawing.Point(143, 36);
-            this.txtBillNumber.Name = "txtBillNumber";
-            this.txtBillNumber.ReadOnly = true;
-            this.txtBillNumber.Size = new System.Drawing.Size(314, 26);
-            this.txtBillNumber.TabIndex = 0;
+            this.txtOrderID.Location = new System.Drawing.Point(160, 34);
+            this.txtOrderID.Name = "txtOrderID";
+            this.txtOrderID.ReadOnly = true;
+            this.txtOrderID.Size = new System.Drawing.Size(314, 26);
+            this.txtOrderID.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -164,7 +185,7 @@
             this.groupBox2.Controls.Add(this.ptbCustomer);
             this.groupBox2.Location = new System.Drawing.Point(511, 21);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(568, 223);
+            this.groupBox2.Size = new System.Drawing.Size(568, 246);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Customer Infos";
@@ -249,7 +270,7 @@
             this.ptbCustomer.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ptbCustomer.Location = new System.Drawing.Point(364, 10);
             this.ptbCustomer.Name = "ptbCustomer";
-            this.ptbCustomer.Size = new System.Drawing.Size(198, 213);
+            this.ptbCustomer.Size = new System.Drawing.Size(198, 230);
             this.ptbCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbCustomer.TabIndex = 0;
             this.ptbCustomer.TabStop = false;
@@ -296,6 +317,43 @@
             this.dgvProducts.Size = new System.Drawing.Size(992, 145);
             this.dgvProducts.TabIndex = 27;
             this.dgvProducts.DoubleClick += new System.EventHandler(this.dgvProducts_DoubleClick);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.deleteCurrentRowToolStripMenuItem,
+            this.deleteAllRowsToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(237, 106);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(236, 32);
+            this.editToolStripMenuItem.Text = "Edit";
+            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(233, 6);
+            // 
+            // deleteCurrentRowToolStripMenuItem
+            // 
+            this.deleteCurrentRowToolStripMenuItem.Name = "deleteCurrentRowToolStripMenuItem";
+            this.deleteCurrentRowToolStripMenuItem.Size = new System.Drawing.Size(236, 32);
+            this.deleteCurrentRowToolStripMenuItem.Text = "Delete Current Row";
+            this.deleteCurrentRowToolStripMenuItem.Click += new System.EventHandler(this.deleteCurrentRowToolStripMenuItem_Click);
+            // 
+            // deleteAllRowsToolStripMenuItem
+            // 
+            this.deleteAllRowsToolStripMenuItem.Name = "deleteAllRowsToolStripMenuItem";
+            this.deleteAllRowsToolStripMenuItem.Size = new System.Drawing.Size(236, 32);
+            this.deleteAllRowsToolStripMenuItem.Text = "Delete All Rows";
+            this.deleteAllRowsToolStripMenuItem.Click += new System.EventHandler(this.deleteAllRowsToolStripMenuItem_Click);
             // 
             // txtFinalPrice
             // 
@@ -506,6 +564,7 @@
             this.btnSaveSell.TabIndex = 16;
             this.btnSaveSell.Text = "Save Sell";
             this.btnSaveSell.UseVisualStyleBackColor = true;
+            this.btnSaveSell.Click += new System.EventHandler(this.btnSaveSell_Click);
             // 
             // btnNewSalle
             // 
@@ -516,43 +575,6 @@
             this.btnNewSalle.Text = "New Sale";
             this.btnNewSalle.UseVisualStyleBackColor = true;
             this.btnNewSalle.Click += new System.EventHandler(this.btnNewSalle_Click);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.editToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.deleteCurrentRowToolStripMenuItem,
-            this.deleteAllRowsToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(241, 139);
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
-            this.editToolStripMenuItem.Text = "Edit";
-            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(237, 6);
-            // 
-            // deleteCurrentRowToolStripMenuItem
-            // 
-            this.deleteCurrentRowToolStripMenuItem.Name = "deleteCurrentRowToolStripMenuItem";
-            this.deleteCurrentRowToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
-            this.deleteCurrentRowToolStripMenuItem.Text = "Delete Current Row";
-            this.deleteCurrentRowToolStripMenuItem.Click += new System.EventHandler(this.deleteCurrentRowToolStripMenuItem_Click);
-            // 
-            // deleteAllRowsToolStripMenuItem
-            // 
-            this.deleteAllRowsToolStripMenuItem.Name = "deleteAllRowsToolStripMenuItem";
-            this.deleteAllRowsToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
-            this.deleteAllRowsToolStripMenuItem.Text = "Delete All Rows";
-            this.deleteAllRowsToolStripMenuItem.Click += new System.EventHandler(this.deleteAllRowsToolStripMenuItem_Click);
             // 
             // frmOrders
             // 
@@ -589,13 +611,13 @@
 
         private System.Windows.Forms.GroupBox grbBillInfos;
         private System.Windows.Forms.Label lblBill;
-        private System.Windows.Forms.TextBox txtBillNumber;
+        private System.Windows.Forms.TextBox txtOrderID;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.PictureBox ptbCustomer;
         private System.Windows.Forms.Label lblSellDate;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtOrderDesc;
         private System.Windows.Forms.Label lblBillDesc;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker tdpOrderDate;
         private System.Windows.Forms.Button btnSearchCustomers;
         private System.Windows.Forms.Label lblCustomerID;
         private System.Windows.Forms.Label lblName;
@@ -634,5 +656,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem deleteCurrentRowToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteAllRowsToolStripMenuItem;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtSellerName;
     }
 }

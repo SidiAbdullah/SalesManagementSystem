@@ -12,6 +12,7 @@ namespace SalesManagementSystem_wf
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        public static string sellerName;
         [STAThread]
         static void Main()
         {

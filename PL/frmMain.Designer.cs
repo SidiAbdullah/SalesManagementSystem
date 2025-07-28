@@ -39,10 +39,8 @@
             this.manageProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageCategoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmCustomers = new System.Windows.Forms.ToolStripMenuItem();
-            this.newCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageCustomersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.newSaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageSalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmUsers = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -119,66 +117,53 @@
             // newProductToolStripMenuItem
             // 
             this.newProductToolStripMenuItem.Name = "newProductToolStripMenuItem";
-            this.newProductToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.newProductToolStripMenuItem.Size = new System.Drawing.Size(267, 34);
             this.newProductToolStripMenuItem.Text = "Add new product";
             this.newProductToolStripMenuItem.Click += new System.EventHandler(this.newProductToolStripMenuItem_Click);
             // 
             // manageProductsToolStripMenuItem
             // 
             this.manageProductsToolStripMenuItem.Name = "manageProductsToolStripMenuItem";
-            this.manageProductsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.manageProductsToolStripMenuItem.Size = new System.Drawing.Size(267, 34);
             this.manageProductsToolStripMenuItem.Text = "Manage products";
             this.manageProductsToolStripMenuItem.Click += new System.EventHandler(this.manageProductsToolStripMenuItem_Click);
             // 
             // manageCategoriesToolStripMenuItem
             // 
             this.manageCategoriesToolStripMenuItem.Name = "manageCategoriesToolStripMenuItem";
-            this.manageCategoriesToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.manageCategoriesToolStripMenuItem.Size = new System.Drawing.Size(267, 34);
             this.manageCategoriesToolStripMenuItem.Text = "Manage Categories";
             this.manageCategoriesToolStripMenuItem.Click += new System.EventHandler(this.manageCategoriesToolStripMenuItem_Click);
             // 
             // tsmCustomers
             // 
             this.tsmCustomers.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newCustomerToolStripMenuItem,
             this.manageCustomersToolStripMenuItem,
             this.toolStripSeparator1,
-            this.newSaleToolStripMenuItem,
             this.manageSalesToolStripMenuItem});
             this.tsmCustomers.Enabled = false;
             this.tsmCustomers.Name = "tsmCustomers";
             this.tsmCustomers.Size = new System.Drawing.Size(113, 29);
             this.tsmCustomers.Text = "Customers";
             // 
-            // newCustomerToolStripMenuItem
-            // 
-            this.newCustomerToolStripMenuItem.Name = "newCustomerToolStripMenuItem";
-            this.newCustomerToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.newCustomerToolStripMenuItem.Text = "Add new customer";
-            this.newCustomerToolStripMenuItem.Click += new System.EventHandler(this.newCustomerToolStripMenuItem_Click);
-            // 
             // manageCustomersToolStripMenuItem
             // 
             this.manageCustomersToolStripMenuItem.Name = "manageCustomersToolStripMenuItem";
             this.manageCustomersToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.manageCustomersToolStripMenuItem.Text = "Manage Customers";
+            this.manageCustomersToolStripMenuItem.Click += new System.EventHandler(this.manageCustomersToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(267, 6);
             // 
-            // newSaleToolStripMenuItem
-            // 
-            this.newSaleToolStripMenuItem.Name = "newSaleToolStripMenuItem";
-            this.newSaleToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.newSaleToolStripMenuItem.Text = "Add new sale";
-            // 
             // manageSalesToolStripMenuItem
             // 
             this.manageSalesToolStripMenuItem.Name = "manageSalesToolStripMenuItem";
             this.manageSalesToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.manageSalesToolStripMenuItem.Text = "Manage Sales";
+            this.manageSalesToolStripMenuItem.Click += new System.EventHandler(this.manageSalesToolStripMenuItem_Click);
             // 
             // tsmUsers
             // 
@@ -233,10 +218,8 @@
         private System.Windows.Forms.ToolStripMenuItem manageProductsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manageCategoriesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tsmCustomers;
-        private System.Windows.Forms.ToolStripMenuItem newCustomerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manageCustomersToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem newSaleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manageSalesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tsmUsers;
         private System.Windows.Forms.ToolStripMenuItem addNewUserToolStripMenuItem;

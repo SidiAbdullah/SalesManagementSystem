@@ -2,6 +2,7 @@
 using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.Xml.Linq;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
@@ -159,6 +160,30 @@ namespace SalesManagementSystem_wf.BL
         public DataTable getLastID()
         {
             return DAL.selectData("getLastID", null);
+        }
+        public void addOrder(int OrderID, DateTime OrderDate,int CustomerID, string Description, string Seller)
+        {
+            SqlParameter[] parameters = new SqlParameter[5];
+            parameters[0] = new SqlParameter("@OrderID", OrderID);
+            parameters[1] = new SqlParameter("@OrderDate", OrderDate);
+            parameters[2] = new SqlParameter("@CustomerID", CustomerID);
+            parameters[3] = new SqlParameter("@Description", Description);
+            parameters[4] = new SqlParameter("@Seller", Seller);
+            DAL.excuteCommand("addOrder", parameters);
+        }
+        // let's work on Orders Details
+        public void addOrderDetails(int ProductID, int OrderID, int Price, int Quantity, int Amount, double Discount, double TotalAmount)
+        {
+            SqlParameter[] parameters = new SqlParameter[7];
+            parameters[0] = new SqlParameter("@ProductID", ProductID);
+            parameters[1] = new SqlParameter("@OrderID", OrderID);
+            parameters[2] = new SqlParameter("@Price", Price);
+            parameters[3] = new SqlParameter("@Quantity", Quantity);
+            parameters[4] = new SqlParameter("@Amount", Amount);
+            parameters[5] = new SqlParameter("@Discount", Discount);
+            parameters[6] = new SqlParameter("@TotalAmount", TotalAmount);
+            DAL.excuteCommand("addOrderDetails", parameters);
+            
         }
     }
 }

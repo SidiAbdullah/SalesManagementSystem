@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "C:\\all_my_projects\\SalesManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|C:\\all_my_projects\\SalesManagementSystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|c:\\all_my_projects\\salesmanagementsystem\\pl\\frmorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|c:\\all_my_projects\\salesmanagementsystem\\pl\\frmorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|c:\\all_my_projects\\salesmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|c:\\all_my_projects\\salesmanagementsystem\\pl\\frmrestoredb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|C:\\all_my_projects\\SalesManagementSystem\\pl\\frmrestoredb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D688F81A-013E-492B-88C8-92010CC71E27}|SalesManagementSystem_wf.csproj|solutionrelative:pl\\frmrestoredb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,6 +39,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "frmOrders.cs",
+              "DocumentMoniker": "C:\\all_my_projects\\SalesManagementSystem\\PL\\frmOrders.cs",
+              "RelativeDocumentMoniker": "PL\\frmOrders.cs",
+              "ToolTip": "C:\\all_my_projects\\SalesManagementSystem\\PL\\frmOrders.cs",
+              "RelativeToolTip": "PL\\frmOrders.cs",
+              "ViewState": "AgIAAMQAAABAMzMzMzMnwMwAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T01:58:31.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmOrders.cs [Design]",
+              "DocumentMoniker": "C:\\all_my_projects\\SalesManagementSystem\\PL\\frmOrders.cs",
+              "RelativeDocumentMoniker": "PL\\frmOrders.cs",
+              "ToolTip": "C:\\all_my_projects\\SalesManagementSystem\\PL\\frmOrders.cs [Design]",
+              "RelativeToolTip": "PL\\frmOrders.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T01:58:26.106Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\all_my_projects\\SalesManagementSystem\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -43,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "frmRestoreDB.cs",
               "DocumentMoniker": "C:\\all_my_projects\\SalesManagementSystem\\PL\\frmRestoreDB.cs",
               "RelativeDocumentMoniker": "PL\\frmRestoreDB.cs",
@@ -51,12 +84,11 @@
               "RelativeToolTip": "PL\\frmRestoreDB.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAowCYAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T00:26:38.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-29T00:26:38.688Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "frmRestoreDB.cs [Design]",
               "DocumentMoniker": "C:\\all_my_projects\\SalesManagementSystem\\PL\\frmRestoreDB.cs",
               "RelativeDocumentMoniker": "PL\\frmRestoreDB.cs",
@@ -67,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "frmMain.cs [Design]",
               "DocumentMoniker": "C:\\all_my_projects\\SalesManagementSystem\\PL\\frmMain.cs",
               "RelativeDocumentMoniker": "PL\\frmMain.cs",

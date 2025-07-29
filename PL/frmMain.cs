@@ -83,5 +83,11 @@ namespace SalesManagementSystem_wf.PL
             frmBackUpDB backUpDB = new frmBackUpDB();
             backUpDB.ShowDialog();
         }
+
+        private void ftsm_restoreBackup_Click(object sender, EventArgs e)
+        {
+            frmRestoreDB restoreDB = new frmRestoreDB();
+            restoreDB.ShowDialog();
+        }
     }
 }

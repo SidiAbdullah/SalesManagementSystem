@@ -121,6 +121,12 @@
     <Compile Include="PL\frmProductsList.Designer.cs">
       <DependentUpon>frmProductsList.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\frmRestoreDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmRestoreDB.Designer.cs">
+      <DependentUpon>frmRestoreDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frmShowImage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frmProductsList.resx">
       <DependentUpon>frmProductsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmRestoreDB.resx">
+      <DependentUpon>frmRestoreDB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frmShowImage.resx">
       <DependentUpon>frmShowImage.cs</DependentUpon>

@@ -64,3 +64,4 @@ C:\all_my_projects\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.PL.f
 C:\all_my_projects\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.PL.frmAddUser.resources
 C:\all_my_projects\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.PL.frmMenageUsers.resources
 C:\all_my_projects\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.PL.frmBackUpDB.resources
+C:\all_my_projects\SalesManagementSystem\obj\Debug\SalesManagementSystem_wf.PL.frmRestoreDB.resources
